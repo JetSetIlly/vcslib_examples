@@ -1,0 +1,1414 @@
+
+main.elf:     file format elf32-littlearm
+
+
+Disassembly of section .text._ZN46_$LT$u8$u20$as$u20$core..iter..range..Step$GT$17forward_unchecked17h9d777584d8a14e77E:
+
+00000000 <_ZN46_$LT$u8$u20$as$u20$core..iter..range..Step$GT$17forward_unchecked17h9d777584d8a14e77E>:
+_ZN46_$LT$u8$u20$as$u20$core..iter..range..Step$GT$17forward_unchecked17h9d777584d8a14e77E():
+   0:	b580      	push	{r7, lr}
+   2:	466f      	mov	r7, sp
+   4:	b082      	sub	sp, #8
+   6:	9000      	str	r0, [sp, #0]
+   8:	9101      	str	r1, [sp, #4]
+   a:	e7ff      	b.n	c <_ZN46_$LT$u8$u20$as$u20$core..iter..range..Step$GT$17forward_unchecked17h9d777584d8a14e77E+0xc>
+   c:	9901      	ldr	r1, [sp, #4]
+   e:	9800      	ldr	r0, [sp, #0]
+  10:	f240 0200 	movw	r2, #0
+			10: R_ARM_THM_MOVW_ABS_NC	.Lanon.175670ed0f22630e69c7f6ae3736dddf.1
+  14:	f2c0 0200 	movt	r2, #0
+			14: R_ARM_THM_MOVT_ABS	.Lanon.175670ed0f22630e69c7f6ae3736dddf.1
+  18:	f7ff fffe 	bl	0 <_ZN46_$LT$u8$u20$as$u20$core..iter..range..Step$GT$17forward_unchecked17h9d777584d8a14e77E>
+			18: R_ARM_THM_CALL	_ZN4core3num20_$LT$impl$u20$u8$GT$13unchecked_add18precondition_check17h40f318b9a90010b9E
+  1c:	e7ff      	b.n	1e <_ZN46_$LT$u8$u20$as$u20$core..iter..range..Step$GT$17forward_unchecked17h9d777584d8a14e77E+0x1e>
+  1e:	9800      	ldr	r0, [sp, #0]
+  20:	9901      	ldr	r1, [sp, #4]
+  22:	4408      	add	r0, r1
+  24:	b002      	add	sp, #8
+  26:	bd80      	pop	{r7, pc}
+
+Disassembly of section .text._ZN47_$LT$i32$u20$as$u20$core..iter..range..Step$GT$17forward_unchecked17h35e665918f8f8926E:
+
+00000000 <_ZN47_$LT$i32$u20$as$u20$core..iter..range..Step$GT$17forward_unchecked17h35e665918f8f8926E>:
+_ZN47_$LT$i32$u20$as$u20$core..iter..range..Step$GT$17forward_unchecked17h35e665918f8f8926E():
+   0:	b580      	push	{r7, lr}
+   2:	466f      	mov	r7, sp
+   4:	b084      	sub	sp, #16
+   6:	1842      	adds	r2, r0, r1
+   8:	4282      	cmp	r2, r0
+   a:	f04f 0001 	mov.w	r0, #1
+   e:	bf78      	it	vc
+  10:	2000      	movvc	r0, #0
+  12:	9201      	str	r2, [sp, #4]
+  14:	2900      	cmp	r1, #0
+  16:	f04f 0100 	mov.w	r1, #0
+  1a:	bf48      	it	mi
+  1c:	2101      	movmi	r1, #1
+  1e:	4048      	eors	r0, r1
+  20:	d107      	bne.n	32 <_ZN47_$LT$i32$u20$as$u20$core..iter..range..Step$GT$17forward_unchecked17h35e665918f8f8926E+0x32>
+  22:	e7ff      	b.n	24 <_ZN47_$LT$i32$u20$as$u20$core..iter..range..Step$GT$17forward_unchecked17h35e665918f8f8926E+0x24>
+  24:	9801      	ldr	r0, [sp, #4]
+  26:	9003      	str	r0, [sp, #12]
+  28:	2001      	movs	r0, #1
+  2a:	9002      	str	r0, [sp, #8]
+  2c:	9803      	ldr	r0, [sp, #12]
+  2e:	b004      	add	sp, #16
+  30:	bd80      	pop	{r7, pc}
+  32:	f240 0000 	movw	r0, #0
+			32: R_ARM_THM_MOVW_ABS_NC	.Lanon.175670ed0f22630e69c7f6ae3736dddf.2
+  36:	f2c0 0000 	movt	r0, #0
+			36: R_ARM_THM_MOVT_ABS	.Lanon.175670ed0f22630e69c7f6ae3736dddf.2
+  3a:	6801      	ldr	r1, [r0, #0]
+  3c:	6840      	ldr	r0, [r0, #4]
+  3e:	9102      	str	r1, [sp, #8]
+  40:	9003      	str	r0, [sp, #12]
+  42:	f240 0000 	movw	r0, #0
+			42: R_ARM_THM_MOVW_ABS_NC	.Lanon.175670ed0f22630e69c7f6ae3736dddf.1
+  46:	f2c0 0000 	movt	r0, #0
+			46: R_ARM_THM_MOVT_ABS	.Lanon.175670ed0f22630e69c7f6ae3736dddf.1
+  4a:	f7ff fffe 	bl	0 <_ZN47_$LT$i32$u20$as$u20$core..iter..range..Step$GT$17forward_unchecked17h35e665918f8f8926E>
+			4a: R_ARM_THM_CALL	_ZN4core4hint21unreachable_unchecked18precondition_check17h5d1741c4bb5b9bedE
+  4e:	defe      	udf	#254	@ 0xfe
+
+Disassembly of section .text._ZN47_$LT$u16$u20$as$u20$core..iter..range..Step$GT$17forward_unchecked17hd9a449645bd5a54cE:
+
+00000000 <_ZN47_$LT$u16$u20$as$u20$core..iter..range..Step$GT$17forward_unchecked17hd9a449645bd5a54cE>:
+_ZN47_$LT$u16$u20$as$u20$core..iter..range..Step$GT$17forward_unchecked17hd9a449645bd5a54cE():
+   0:	b580      	push	{r7, lr}
+   2:	466f      	mov	r7, sp
+   4:	b082      	sub	sp, #8
+   6:	9000      	str	r0, [sp, #0]
+   8:	9101      	str	r1, [sp, #4]
+   a:	e7ff      	b.n	c <_ZN47_$LT$u16$u20$as$u20$core..iter..range..Step$GT$17forward_unchecked17hd9a449645bd5a54cE+0xc>
+   c:	9901      	ldr	r1, [sp, #4]
+   e:	9800      	ldr	r0, [sp, #0]
+  10:	f240 0200 	movw	r2, #0
+			10: R_ARM_THM_MOVW_ABS_NC	.Lanon.175670ed0f22630e69c7f6ae3736dddf.1
+  14:	f2c0 0200 	movt	r2, #0
+			14: R_ARM_THM_MOVT_ABS	.Lanon.175670ed0f22630e69c7f6ae3736dddf.1
+  18:	f7ff fffe 	bl	0 <_ZN47_$LT$u16$u20$as$u20$core..iter..range..Step$GT$17forward_unchecked17hd9a449645bd5a54cE>
+			18: R_ARM_THM_CALL	_ZN4core3num21_$LT$impl$u20$u16$GT$13unchecked_add18precondition_check17h7513ab8930fa2b47E
+  1c:	e7ff      	b.n	1e <_ZN47_$LT$u16$u20$as$u20$core..iter..range..Step$GT$17forward_unchecked17hd9a449645bd5a54cE+0x1e>
+  1e:	9800      	ldr	r0, [sp, #0]
+  20:	9901      	ldr	r1, [sp, #4]
+  22:	4408      	add	r0, r1
+  24:	b002      	add	sp, #8
+  26:	bd80      	pop	{r7, pc}
+
+Disassembly of section .text._ZN49_$LT$usize$u20$as$u20$core..iter..range..Step$GT$17forward_unchecked17hb4af40415d8428ccE:
+
+00000000 <_ZN49_$LT$usize$u20$as$u20$core..iter..range..Step$GT$17forward_unchecked17hb4af40415d8428ccE>:
+_ZN49_$LT$usize$u20$as$u20$core..iter..range..Step$GT$17forward_unchecked17hb4af40415d8428ccE():
+   0:	b580      	push	{r7, lr}
+   2:	466f      	mov	r7, sp
+   4:	b082      	sub	sp, #8
+   6:	9100      	str	r1, [sp, #0]
+   8:	9001      	str	r0, [sp, #4]
+   a:	e7ff      	b.n	c <_ZN49_$LT$usize$u20$as$u20$core..iter..range..Step$GT$17forward_unchecked17hb4af40415d8428ccE+0xc>
+   c:	9900      	ldr	r1, [sp, #0]
+   e:	9801      	ldr	r0, [sp, #4]
+  10:	f240 0200 	movw	r2, #0
+			10: R_ARM_THM_MOVW_ABS_NC	.Lanon.175670ed0f22630e69c7f6ae3736dddf.1
+  14:	f2c0 0200 	movt	r2, #0
+			14: R_ARM_THM_MOVT_ABS	.Lanon.175670ed0f22630e69c7f6ae3736dddf.1
+  18:	f7ff fffe 	bl	0 <_ZN49_$LT$usize$u20$as$u20$core..iter..range..Step$GT$17forward_unchecked17hb4af40415d8428ccE>
+			18: R_ARM_THM_CALL	_ZN4core3num23_$LT$impl$u20$usize$GT$13unchecked_add18precondition_check17h6092fca839bee49cE
+  1c:	e7ff      	b.n	1e <_ZN49_$LT$usize$u20$as$u20$core..iter..range..Step$GT$17forward_unchecked17hb4af40415d8428ccE+0x1e>
+  1e:	9801      	ldr	r0, [sp, #4]
+  20:	9900      	ldr	r1, [sp, #0]
+  22:	4408      	add	r0, r1
+  24:	b002      	add	sp, #8
+  26:	bd80      	pop	{r7, pc}
+
+Disassembly of section .text._ZN4core10intrinsics9cold_path17hdb006b3aea42fdd7E:
+
+00000000 <_ZN4core10intrinsics9cold_path17hdb006b3aea42fdd7E>:
+_ZN4core10intrinsics9cold_path17hdb006b3aea42fdd7E():
+   0:	b580      	push	{r7, lr}
+   2:	466f      	mov	r7, sp
+   4:	bd80      	pop	{r7, pc}
+
+Disassembly of section .text._ZN4core3num20_$LT$impl$u20$u8$GT$13unchecked_add18precondition_check17h40f318b9a90010b9E:
+
+00000000 <_ZN4core3num20_$LT$impl$u20$u8$GT$13unchecked_add18precondition_check17h40f318b9a90010b9E>:
+_ZN4core3num20_$LT$impl$u20$u8$GT$13unchecked_add18precondition_check17h40f318b9a90010b9E():
+   0:	b580      	push	{r7, lr}
+   2:	466f      	mov	r7, sp
+   4:	b08a      	sub	sp, #40	@ 0x28
+   6:	9201      	str	r2, [sp, #4]
+   8:	4602      	mov	r2, r0
+   a:	b2d0      	uxtb	r0, r2
+   c:	fa50 f181 	uxtab	r1, r0, r1
+  10:	b2c8      	uxtb	r0, r1
+  12:	4288      	cmp	r0, r1
+  14:	d102      	bne.n	1c <_ZN4core3num20_$LT$impl$u20$u8$GT$13unchecked_add18precondition_check17h40f318b9a90010b9E+0x1c>
+  16:	e7ff      	b.n	18 <_ZN4core3num20_$LT$impl$u20$u8$GT$13unchecked_add18precondition_check17h40f318b9a90010b9E+0x18>
+  18:	b00a      	add	sp, #40	@ 0x28
+  1a:	bd80      	pop	{r7, pc}
+  1c:	9a01      	ldr	r2, [sp, #4]
+  1e:	f240 0000 	movw	r0, #0
+			1e: R_ARM_THM_MOVW_ABS_NC	.Lanon.175670ed0f22630e69c7f6ae3736dddf.3
+  22:	f2c0 0000 	movt	r0, #0
+			22: R_ARM_THM_MOVT_ABS	.Lanon.175670ed0f22630e69c7f6ae3736dddf.3
+  26:	9008      	str	r0, [sp, #32]
+  28:	20b7      	movs	r0, #183	@ 0xb7
+  2a:	9009      	str	r0, [sp, #36]	@ 0x24
+  2c:	a808      	add	r0, sp, #32
+  2e:	9002      	str	r0, [sp, #8]
+  30:	2001      	movs	r0, #1
+  32:	9003      	str	r0, [sp, #12]
+  34:	f240 0000 	movw	r0, #0
+			34: R_ARM_THM_MOVW_ABS_NC	.Lanon.175670ed0f22630e69c7f6ae3736dddf.2
+  38:	f2c0 0000 	movt	r0, #0
+			38: R_ARM_THM_MOVT_ABS	.Lanon.175670ed0f22630e69c7f6ae3736dddf.2
+  3c:	6801      	ldr	r1, [r0, #0]
+  3e:	6840      	ldr	r0, [r0, #4]
+  40:	9106      	str	r1, [sp, #24]
+  42:	9007      	str	r0, [sp, #28]
+  44:	2004      	movs	r0, #4
+  46:	9004      	str	r0, [sp, #16]
+  48:	2100      	movs	r1, #0
+  4a:	9105      	str	r1, [sp, #20]
+  4c:	a802      	add	r0, sp, #8
+  4e:	f7ff fffe 	bl	0 <_ZN4core9panicking18panic_nounwind_fmt17h9f728c38082bd3d5E>
+			4e: R_ARM_THM_CALL	_ZN4core9panicking18panic_nounwind_fmt17h9f728c38082bd3d5E
+
+Disassembly of section .text._ZN4core3num21_$LT$impl$u20$u16$GT$13unchecked_add18precondition_check17h7513ab8930fa2b47E:
+
+00000000 <_ZN4core3num21_$LT$impl$u20$u16$GT$13unchecked_add18precondition_check17h7513ab8930fa2b47E>:
+_ZN4core3num21_$LT$impl$u20$u16$GT$13unchecked_add18precondition_check17h7513ab8930fa2b47E():
+   0:	b580      	push	{r7, lr}
+   2:	466f      	mov	r7, sp
+   4:	b08a      	sub	sp, #40	@ 0x28
+   6:	9201      	str	r2, [sp, #4]
+   8:	4602      	mov	r2, r0
+   a:	b290      	uxth	r0, r2
+   c:	fa10 f181 	uxtah	r1, r0, r1
+  10:	b288      	uxth	r0, r1
+  12:	4288      	cmp	r0, r1
+  14:	d102      	bne.n	1c <_ZN4core3num21_$LT$impl$u20$u16$GT$13unchecked_add18precondition_check17h7513ab8930fa2b47E+0x1c>
+  16:	e7ff      	b.n	18 <_ZN4core3num21_$LT$impl$u20$u16$GT$13unchecked_add18precondition_check17h7513ab8930fa2b47E+0x18>
+  18:	b00a      	add	sp, #40	@ 0x28
+  1a:	bd80      	pop	{r7, pc}
+  1c:	9a01      	ldr	r2, [sp, #4]
+  1e:	f240 0000 	movw	r0, #0
+			1e: R_ARM_THM_MOVW_ABS_NC	.Lanon.175670ed0f22630e69c7f6ae3736dddf.4
+  22:	f2c0 0000 	movt	r0, #0
+			22: R_ARM_THM_MOVT_ABS	.Lanon.175670ed0f22630e69c7f6ae3736dddf.4
+  26:	9008      	str	r0, [sp, #32]
+  28:	20b8      	movs	r0, #184	@ 0xb8
+  2a:	9009      	str	r0, [sp, #36]	@ 0x24
+  2c:	a808      	add	r0, sp, #32
+  2e:	9002      	str	r0, [sp, #8]
+  30:	2001      	movs	r0, #1
+  32:	9003      	str	r0, [sp, #12]
+  34:	f240 0000 	movw	r0, #0
+			34: R_ARM_THM_MOVW_ABS_NC	.Lanon.175670ed0f22630e69c7f6ae3736dddf.2
+  38:	f2c0 0000 	movt	r0, #0
+			38: R_ARM_THM_MOVT_ABS	.Lanon.175670ed0f22630e69c7f6ae3736dddf.2
+  3c:	6801      	ldr	r1, [r0, #0]
+  3e:	6840      	ldr	r0, [r0, #4]
+  40:	9106      	str	r1, [sp, #24]
+  42:	9007      	str	r0, [sp, #28]
+  44:	2004      	movs	r0, #4
+  46:	9004      	str	r0, [sp, #16]
+  48:	2100      	movs	r1, #0
+  4a:	9105      	str	r1, [sp, #20]
+  4c:	a802      	add	r0, sp, #8
+  4e:	f7ff fffe 	bl	0 <_ZN4core9panicking18panic_nounwind_fmt17h9f728c38082bd3d5E>
+			4e: R_ARM_THM_CALL	_ZN4core9panicking18panic_nounwind_fmt17h9f728c38082bd3d5E
+
+Disassembly of section .text._ZN4core3num23_$LT$impl$u20$usize$GT$13unchecked_add18precondition_check17h6092fca839bee49cE:
+
+00000000 <_ZN4core3num23_$LT$impl$u20$usize$GT$13unchecked_add18precondition_check17h6092fca839bee49cE>:
+_ZN4core3num23_$LT$impl$u20$usize$GT$13unchecked_add18precondition_check17h6092fca839bee49cE():
+   0:	b580      	push	{r7, lr}
+   2:	466f      	mov	r7, sp
+   4:	b08a      	sub	sp, #40	@ 0x28
+   6:	9200      	str	r2, [sp, #0]
+   8:	9101      	str	r1, [sp, #4]
+   a:	4601      	mov	r1, r0
+   c:	9801      	ldr	r0, [sp, #4]
+   e:	4408      	add	r0, r1
+  10:	4288      	cmp	r0, r1
+  12:	d302      	bcc.n	1a <_ZN4core3num23_$LT$impl$u20$usize$GT$13unchecked_add18precondition_check17h6092fca839bee49cE+0x1a>
+  14:	e7ff      	b.n	16 <_ZN4core3num23_$LT$impl$u20$usize$GT$13unchecked_add18precondition_check17h6092fca839bee49cE+0x16>
+  16:	b00a      	add	sp, #40	@ 0x28
+  18:	bd80      	pop	{r7, pc}
+  1a:	9a00      	ldr	r2, [sp, #0]
+  1c:	f240 0000 	movw	r0, #0
+			1c: R_ARM_THM_MOVW_ABS_NC	.Lanon.175670ed0f22630e69c7f6ae3736dddf.5
+  20:	f2c0 0000 	movt	r0, #0
+			20: R_ARM_THM_MOVT_ABS	.Lanon.175670ed0f22630e69c7f6ae3736dddf.5
+  24:	9008      	str	r0, [sp, #32]
+  26:	20ba      	movs	r0, #186	@ 0xba
+  28:	9009      	str	r0, [sp, #36]	@ 0x24
+  2a:	a808      	add	r0, sp, #32
+  2c:	9002      	str	r0, [sp, #8]
+  2e:	2001      	movs	r0, #1
+  30:	9003      	str	r0, [sp, #12]
+  32:	f240 0000 	movw	r0, #0
+			32: R_ARM_THM_MOVW_ABS_NC	.Lanon.175670ed0f22630e69c7f6ae3736dddf.2
+  36:	f2c0 0000 	movt	r0, #0
+			36: R_ARM_THM_MOVT_ABS	.Lanon.175670ed0f22630e69c7f6ae3736dddf.2
+  3a:	6801      	ldr	r1, [r0, #0]
+  3c:	6840      	ldr	r0, [r0, #4]
+  3e:	9106      	str	r1, [sp, #24]
+  40:	9007      	str	r0, [sp, #28]
+  42:	2004      	movs	r0, #4
+  44:	9004      	str	r0, [sp, #16]
+  46:	2100      	movs	r1, #0
+  48:	9105      	str	r1, [sp, #20]
+  4a:	a802      	add	r0, sp, #8
+  4c:	f7ff fffe 	bl	0 <_ZN4core9panicking18panic_nounwind_fmt17h9f728c38082bd3d5E>
+			4c: R_ARM_THM_CALL	_ZN4core9panicking18panic_nounwind_fmt17h9f728c38082bd3d5E
+
+Disassembly of section .text._ZN4core4hint21unreachable_unchecked18precondition_check17h5d1741c4bb5b9bedE:
+
+00000000 <_ZN4core4hint21unreachable_unchecked18precondition_check17h5d1741c4bb5b9bedE>:
+_ZN4core4hint21unreachable_unchecked18precondition_check17h5d1741c4bb5b9bedE():
+   0:	b580      	push	{r7, lr}
+   2:	466f      	mov	r7, sp
+   4:	b088      	sub	sp, #32
+   6:	4602      	mov	r2, r0
+   8:	f240 0000 	movw	r0, #0
+			8: R_ARM_THM_MOVW_ABS_NC	.Lanon.175670ed0f22630e69c7f6ae3736dddf.6
+   c:	f2c0 0000 	movt	r0, #0
+			c: R_ARM_THM_MOVT_ABS	.Lanon.175670ed0f22630e69c7f6ae3736dddf.6
+  10:	9006      	str	r0, [sp, #24]
+  12:	20c7      	movs	r0, #199	@ 0xc7
+  14:	9007      	str	r0, [sp, #28]
+  16:	a806      	add	r0, sp, #24
+  18:	9000      	str	r0, [sp, #0]
+  1a:	2001      	movs	r0, #1
+  1c:	9001      	str	r0, [sp, #4]
+  1e:	f240 0000 	movw	r0, #0
+			1e: R_ARM_THM_MOVW_ABS_NC	.Lanon.175670ed0f22630e69c7f6ae3736dddf.2
+  22:	f2c0 0000 	movt	r0, #0
+			22: R_ARM_THM_MOVT_ABS	.Lanon.175670ed0f22630e69c7f6ae3736dddf.2
+  26:	6801      	ldr	r1, [r0, #0]
+  28:	6840      	ldr	r0, [r0, #4]
+  2a:	9104      	str	r1, [sp, #16]
+  2c:	9005      	str	r0, [sp, #20]
+  2e:	2004      	movs	r0, #4
+  30:	9002      	str	r0, [sp, #8]
+  32:	2100      	movs	r1, #0
+  34:	9103      	str	r1, [sp, #12]
+  36:	4668      	mov	r0, sp
+  38:	f7ff fffe 	bl	0 <_ZN4core9panicking18panic_nounwind_fmt17h9f728c38082bd3d5E>
+			38: R_ARM_THM_CALL	_ZN4core9panicking18panic_nounwind_fmt17h9f728c38082bd3d5E
+
+Disassembly of section .text._ZN4core4iter5range101_$LT$impl$u20$core..iter..traits..iterator..Iterator$u20$for$u20$core..ops..range..Range$LT$A$GT$$GT$4next17h26e4a23f0d651220E:
+
+00000000 <_ZN4core4iter5range101_$LT$impl$u20$core..iter..traits..iterator..Iterator$u20$for$u20$core..ops..range..Range$LT$A$GT$$GT$4next17h26e4a23f0d651220E>:
+_ZN4core4iter5range101_$LT$impl$u20$core..iter..traits..iterator..Iterator$u20$for$u20$core..ops..range..Range$LT$A$GT$$GT$4next17h26e4a23f0d651220E():
+   0:	b580      	push	{r7, lr}
+   2:	466f      	mov	r7, sp
+   4:	f7ff fffe 	bl	0 <_ZN4core4iter5range101_$LT$impl$u20$core..iter..traits..iterator..Iterator$u20$for$u20$core..ops..range..Range$LT$A$GT$$GT$4next17h26e4a23f0d651220E>
+			4: R_ARM_THM_CALL	_ZN89_$LT$core..ops..range..Range$LT$T$GT$$u20$as$u20$core..iter..range..RangeIteratorImpl$GT$9spec_next17hdcc41e292f138b6aE
+   8:	bd80      	pop	{r7, pc}
+
+Disassembly of section .text._ZN4core4iter5range101_$LT$impl$u20$core..iter..traits..iterator..Iterator$u20$for$u20$core..ops..range..Range$LT$A$GT$$GT$4next17h8e7f90b3e456a114E:
+
+00000000 <_ZN4core4iter5range101_$LT$impl$u20$core..iter..traits..iterator..Iterator$u20$for$u20$core..ops..range..Range$LT$A$GT$$GT$4next17h8e7f90b3e456a114E>:
+_ZN4core4iter5range101_$LT$impl$u20$core..iter..traits..iterator..Iterator$u20$for$u20$core..ops..range..Range$LT$A$GT$$GT$4next17h8e7f90b3e456a114E():
+   0:	b580      	push	{r7, lr}
+   2:	466f      	mov	r7, sp
+   4:	f7ff fffe 	bl	0 <_ZN4core4iter5range101_$LT$impl$u20$core..iter..traits..iterator..Iterator$u20$for$u20$core..ops..range..Range$LT$A$GT$$GT$4next17h8e7f90b3e456a114E>
+			4: R_ARM_THM_CALL	_ZN89_$LT$core..ops..range..Range$LT$T$GT$$u20$as$u20$core..iter..range..RangeIteratorImpl$GT$9spec_next17hc22bb04d952e6156E
+   8:	bd80      	pop	{r7, pc}
+
+Disassembly of section .text._ZN4core4iter5range101_$LT$impl$u20$core..iter..traits..iterator..Iterator$u20$for$u20$core..ops..range..Range$LT$A$GT$$GT$4next17h90f54a073599a9aeE:
+
+00000000 <_ZN4core4iter5range101_$LT$impl$u20$core..iter..traits..iterator..Iterator$u20$for$u20$core..ops..range..Range$LT$A$GT$$GT$4next17h90f54a073599a9aeE>:
+_ZN4core4iter5range101_$LT$impl$u20$core..iter..traits..iterator..Iterator$u20$for$u20$core..ops..range..Range$LT$A$GT$$GT$4next17h90f54a073599a9aeE():
+   0:	b580      	push	{r7, lr}
+   2:	466f      	mov	r7, sp
+   4:	f7ff fffe 	bl	0 <_ZN4core4iter5range101_$LT$impl$u20$core..iter..traits..iterator..Iterator$u20$for$u20$core..ops..range..Range$LT$A$GT$$GT$4next17h90f54a073599a9aeE>
+			4: R_ARM_THM_CALL	_ZN89_$LT$core..ops..range..Range$LT$T$GT$$u20$as$u20$core..iter..range..RangeIteratorImpl$GT$9spec_next17hc9fc5a016edd2dbbE
+   8:	bd80      	pop	{r7, pc}
+
+Disassembly of section .text._ZN4core4iter5range101_$LT$impl$u20$core..iter..traits..iterator..Iterator$u20$for$u20$core..ops..range..Range$LT$A$GT$$GT$4next17h9a98ccf1522da18aE:
+
+00000000 <_ZN4core4iter5range101_$LT$impl$u20$core..iter..traits..iterator..Iterator$u20$for$u20$core..ops..range..Range$LT$A$GT$$GT$4next17h9a98ccf1522da18aE>:
+_ZN4core4iter5range101_$LT$impl$u20$core..iter..traits..iterator..Iterator$u20$for$u20$core..ops..range..Range$LT$A$GT$$GT$4next17h9a98ccf1522da18aE():
+   0:	b580      	push	{r7, lr}
+   2:	466f      	mov	r7, sp
+   4:	f7ff fffe 	bl	0 <_ZN4core4iter5range101_$LT$impl$u20$core..iter..traits..iterator..Iterator$u20$for$u20$core..ops..range..Range$LT$A$GT$$GT$4next17h9a98ccf1522da18aE>
+			4: R_ARM_THM_CALL	_ZN89_$LT$core..ops..range..Range$LT$T$GT$$u20$as$u20$core..iter..range..RangeIteratorImpl$GT$9spec_next17h28ad8746dbb5f01eE
+   8:	bd80      	pop	{r7, pc}
+
+Disassembly of section .text._ZN63_$LT$I$u20$as$u20$core..iter..traits..collect..IntoIterator$GT$9into_iter17h13a0b2aadd51a0efE:
+
+00000000 <_ZN63_$LT$I$u20$as$u20$core..iter..traits..collect..IntoIterator$GT$9into_iter17h13a0b2aadd51a0efE>:
+_ZN63_$LT$I$u20$as$u20$core..iter..traits..collect..IntoIterator$GT$9into_iter17h13a0b2aadd51a0efE():
+   0:	b580      	push	{r7, lr}
+   2:	466f      	mov	r7, sp
+   4:	bd80      	pop	{r7, pc}
+
+Disassembly of section .text._ZN63_$LT$I$u20$as$u20$core..iter..traits..collect..IntoIterator$GT$9into_iter17h3a632ce36439d360E:
+
+00000000 <_ZN63_$LT$I$u20$as$u20$core..iter..traits..collect..IntoIterator$GT$9into_iter17h3a632ce36439d360E>:
+_ZN63_$LT$I$u20$as$u20$core..iter..traits..collect..IntoIterator$GT$9into_iter17h3a632ce36439d360E():
+   0:	b580      	push	{r7, lr}
+   2:	466f      	mov	r7, sp
+   4:	bd80      	pop	{r7, pc}
+
+Disassembly of section .text._ZN63_$LT$I$u20$as$u20$core..iter..traits..collect..IntoIterator$GT$9into_iter17h562d3e01c7f43990E:
+
+00000000 <_ZN63_$LT$I$u20$as$u20$core..iter..traits..collect..IntoIterator$GT$9into_iter17h562d3e01c7f43990E>:
+_ZN63_$LT$I$u20$as$u20$core..iter..traits..collect..IntoIterator$GT$9into_iter17h562d3e01c7f43990E():
+   0:	b580      	push	{r7, lr}
+   2:	466f      	mov	r7, sp
+   4:	bd80      	pop	{r7, pc}
+
+Disassembly of section .text._ZN63_$LT$I$u20$as$u20$core..iter..traits..collect..IntoIterator$GT$9into_iter17hb911addd574f542aE:
+
+00000000 <_ZN63_$LT$I$u20$as$u20$core..iter..traits..collect..IntoIterator$GT$9into_iter17hb911addd574f542aE>:
+_ZN63_$LT$I$u20$as$u20$core..iter..traits..collect..IntoIterator$GT$9into_iter17hb911addd574f542aE():
+   0:	b580      	push	{r7, lr}
+   2:	466f      	mov	r7, sp
+   4:	bd80      	pop	{r7, pc}
+
+Disassembly of section .text._ZN89_$LT$core..ops..range..Range$LT$T$GT$$u20$as$u20$core..iter..range..RangeIteratorImpl$GT$9spec_next17h28ad8746dbb5f01eE:
+
+00000000 <_ZN89_$LT$core..ops..range..Range$LT$T$GT$$u20$as$u20$core..iter..range..RangeIteratorImpl$GT$9spec_next17h28ad8746dbb5f01eE>:
+_ZN89_$LT$core..ops..range..Range$LT$T$GT$$u20$as$u20$core..iter..range..RangeIteratorImpl$GT$9spec_next17h28ad8746dbb5f01eE():
+   0:	b580      	push	{r7, lr}
+   2:	466f      	mov	r7, sp
+   4:	b086      	sub	sp, #24
+   6:	4601      	mov	r1, r0
+   8:	9103      	str	r1, [sp, #12]
+   a:	6808      	ldr	r0, [r1, #0]
+   c:	6849      	ldr	r1, [r1, #4]
+   e:	4288      	cmp	r0, r1
+  10:	db03      	blt.n	1a <_ZN89_$LT$core..ops..range..Range$LT$T$GT$$u20$as$u20$core..iter..range..RangeIteratorImpl$GT$9spec_next17h28ad8746dbb5f01eE+0x1a>
+  12:	e7ff      	b.n	14 <_ZN89_$LT$core..ops..range..Range$LT$T$GT$$u20$as$u20$core..iter..range..RangeIteratorImpl$GT$9spec_next17h28ad8746dbb5f01eE+0x14>
+  14:	2000      	movs	r0, #0
+  16:	9004      	str	r0, [sp, #16]
+  18:	e00e      	b.n	38 <_ZN89_$LT$core..ops..range..Range$LT$T$GT$$u20$as$u20$core..iter..range..RangeIteratorImpl$GT$9spec_next17h28ad8746dbb5f01eE+0x38>
+  1a:	9803      	ldr	r0, [sp, #12]
+  1c:	6800      	ldr	r0, [r0, #0]
+  1e:	9001      	str	r0, [sp, #4]
+  20:	2101      	movs	r1, #1
+  22:	9102      	str	r1, [sp, #8]
+  24:	f7ff fffe 	bl	0 <_ZN89_$LT$core..ops..range..Range$LT$T$GT$$u20$as$u20$core..iter..range..RangeIteratorImpl$GT$9spec_next17h28ad8746dbb5f01eE>
+			24: R_ARM_THM_CALL	_ZN47_$LT$i32$u20$as$u20$core..iter..range..Step$GT$17forward_unchecked17h35e665918f8f8926E
+  28:	9b03      	ldr	r3, [sp, #12]
+  2a:	9901      	ldr	r1, [sp, #4]
+  2c:	4602      	mov	r2, r0
+  2e:	9802      	ldr	r0, [sp, #8]
+  30:	601a      	str	r2, [r3, #0]
+  32:	9105      	str	r1, [sp, #20]
+  34:	9004      	str	r0, [sp, #16]
+  36:	e7ff      	b.n	38 <_ZN89_$LT$core..ops..range..Range$LT$T$GT$$u20$as$u20$core..iter..range..RangeIteratorImpl$GT$9spec_next17h28ad8746dbb5f01eE+0x38>
+  38:	9804      	ldr	r0, [sp, #16]
+  3a:	9905      	ldr	r1, [sp, #20]
+  3c:	b006      	add	sp, #24
+  3e:	bd80      	pop	{r7, pc}
+
+Disassembly of section .text._ZN89_$LT$core..ops..range..Range$LT$T$GT$$u20$as$u20$core..iter..range..RangeIteratorImpl$GT$9spec_next17hc22bb04d952e6156E:
+
+00000000 <_ZN89_$LT$core..ops..range..Range$LT$T$GT$$u20$as$u20$core..iter..range..RangeIteratorImpl$GT$9spec_next17hc22bb04d952e6156E>:
+_ZN89_$LT$core..ops..range..Range$LT$T$GT$$u20$as$u20$core..iter..range..RangeIteratorImpl$GT$9spec_next17hc22bb04d952e6156E():
+   0:	b580      	push	{r7, lr}
+   2:	466f      	mov	r7, sp
+   4:	b084      	sub	sp, #16
+   6:	4601      	mov	r1, r0
+   8:	9102      	str	r1, [sp, #8]
+   a:	8808      	ldrh	r0, [r1, #0]
+   c:	8849      	ldrh	r1, [r1, #2]
+   e:	4288      	cmp	r0, r1
+  10:	d304      	bcc.n	1c <_ZN89_$LT$core..ops..range..Range$LT$T$GT$$u20$as$u20$core..iter..range..RangeIteratorImpl$GT$9spec_next17hc22bb04d952e6156E+0x1c>
+  12:	e7ff      	b.n	14 <_ZN89_$LT$core..ops..range..Range$LT$T$GT$$u20$as$u20$core..iter..range..RangeIteratorImpl$GT$9spec_next17hc22bb04d952e6156E+0x14>
+  14:	2000      	movs	r0, #0
+  16:	f8ad 000c 	strh.w	r0, [sp, #12]
+  1a:	e010      	b.n	3e <_ZN89_$LT$core..ops..range..Range$LT$T$GT$$u20$as$u20$core..iter..range..RangeIteratorImpl$GT$9spec_next17hc22bb04d952e6156E+0x3e>
+  1c:	9802      	ldr	r0, [sp, #8]
+  1e:	8800      	ldrh	r0, [r0, #0]
+  20:	9000      	str	r0, [sp, #0]
+  22:	2101      	movs	r1, #1
+  24:	9101      	str	r1, [sp, #4]
+  26:	f7ff fffe 	bl	0 <_ZN89_$LT$core..ops..range..Range$LT$T$GT$$u20$as$u20$core..iter..range..RangeIteratorImpl$GT$9spec_next17hc22bb04d952e6156E>
+			26: R_ARM_THM_CALL	_ZN47_$LT$u16$u20$as$u20$core..iter..range..Step$GT$17forward_unchecked17hd9a449645bd5a54cE
+  2a:	9b02      	ldr	r3, [sp, #8]
+  2c:	9900      	ldr	r1, [sp, #0]
+  2e:	4602      	mov	r2, r0
+  30:	9801      	ldr	r0, [sp, #4]
+  32:	801a      	strh	r2, [r3, #0]
+  34:	f8ad 100e 	strh.w	r1, [sp, #14]
+  38:	f8ad 000c 	strh.w	r0, [sp, #12]
+  3c:	e7ff      	b.n	3e <_ZN89_$LT$core..ops..range..Range$LT$T$GT$$u20$as$u20$core..iter..range..RangeIteratorImpl$GT$9spec_next17hc22bb04d952e6156E+0x3e>
+  3e:	f8bd 000c 	ldrh.w	r0, [sp, #12]
+  42:	f8bd 100e 	ldrh.w	r1, [sp, #14]
+  46:	b004      	add	sp, #16
+  48:	bd80      	pop	{r7, pc}
+
+Disassembly of section .text._ZN89_$LT$core..ops..range..Range$LT$T$GT$$u20$as$u20$core..iter..range..RangeIteratorImpl$GT$9spec_next17hc9fc5a016edd2dbbE:
+
+00000000 <_ZN89_$LT$core..ops..range..Range$LT$T$GT$$u20$as$u20$core..iter..range..RangeIteratorImpl$GT$9spec_next17hc9fc5a016edd2dbbE>:
+_ZN89_$LT$core..ops..range..Range$LT$T$GT$$u20$as$u20$core..iter..range..RangeIteratorImpl$GT$9spec_next17hc9fc5a016edd2dbbE():
+   0:	b580      	push	{r7, lr}
+   2:	466f      	mov	r7, sp
+   4:	b084      	sub	sp, #16
+   6:	4601      	mov	r1, r0
+   8:	9102      	str	r1, [sp, #8]
+   a:	7808      	ldrb	r0, [r1, #0]
+   c:	7849      	ldrb	r1, [r1, #1]
+   e:	4288      	cmp	r0, r1
+  10:	d304      	bcc.n	1c <_ZN89_$LT$core..ops..range..Range$LT$T$GT$$u20$as$u20$core..iter..range..RangeIteratorImpl$GT$9spec_next17hc9fc5a016edd2dbbE+0x1c>
+  12:	e7ff      	b.n	14 <_ZN89_$LT$core..ops..range..Range$LT$T$GT$$u20$as$u20$core..iter..range..RangeIteratorImpl$GT$9spec_next17hc9fc5a016edd2dbbE+0x14>
+  14:	2000      	movs	r0, #0
+  16:	f807 0c02 	strb.w	r0, [r7, #-2]
+  1a:	e010      	b.n	3e <_ZN89_$LT$core..ops..range..Range$LT$T$GT$$u20$as$u20$core..iter..range..RangeIteratorImpl$GT$9spec_next17hc9fc5a016edd2dbbE+0x3e>
+  1c:	9802      	ldr	r0, [sp, #8]
+  1e:	7800      	ldrb	r0, [r0, #0]
+  20:	9000      	str	r0, [sp, #0]
+  22:	2101      	movs	r1, #1
+  24:	9101      	str	r1, [sp, #4]
+  26:	f7ff fffe 	bl	0 <_ZN89_$LT$core..ops..range..Range$LT$T$GT$$u20$as$u20$core..iter..range..RangeIteratorImpl$GT$9spec_next17hc9fc5a016edd2dbbE>
+			26: R_ARM_THM_CALL	_ZN46_$LT$u8$u20$as$u20$core..iter..range..Step$GT$17forward_unchecked17h9d777584d8a14e77E
+  2a:	9b02      	ldr	r3, [sp, #8]
+  2c:	9900      	ldr	r1, [sp, #0]
+  2e:	4602      	mov	r2, r0
+  30:	9801      	ldr	r0, [sp, #4]
+  32:	701a      	strb	r2, [r3, #0]
+  34:	f807 1c01 	strb.w	r1, [r7, #-1]
+  38:	f807 0c02 	strb.w	r0, [r7, #-2]
+  3c:	e7ff      	b.n	3e <_ZN89_$LT$core..ops..range..Range$LT$T$GT$$u20$as$u20$core..iter..range..RangeIteratorImpl$GT$9spec_next17hc9fc5a016edd2dbbE+0x3e>
+  3e:	f817 0c02 	ldrb.w	r0, [r7, #-2]
+  42:	f817 1c01 	ldrb.w	r1, [r7, #-1]
+  46:	b004      	add	sp, #16
+  48:	bd80      	pop	{r7, pc}
+
+Disassembly of section .text._ZN89_$LT$core..ops..range..Range$LT$T$GT$$u20$as$u20$core..iter..range..RangeIteratorImpl$GT$9spec_next17hdcc41e292f138b6aE:
+
+00000000 <_ZN89_$LT$core..ops..range..Range$LT$T$GT$$u20$as$u20$core..iter..range..RangeIteratorImpl$GT$9spec_next17hdcc41e292f138b6aE>:
+_ZN89_$LT$core..ops..range..Range$LT$T$GT$$u20$as$u20$core..iter..range..RangeIteratorImpl$GT$9spec_next17hdcc41e292f138b6aE():
+   0:	b580      	push	{r7, lr}
+   2:	466f      	mov	r7, sp
+   4:	b086      	sub	sp, #24
+   6:	4601      	mov	r1, r0
+   8:	9103      	str	r1, [sp, #12]
+   a:	6808      	ldr	r0, [r1, #0]
+   c:	6849      	ldr	r1, [r1, #4]
+   e:	4288      	cmp	r0, r1
+  10:	d303      	bcc.n	1a <_ZN89_$LT$core..ops..range..Range$LT$T$GT$$u20$as$u20$core..iter..range..RangeIteratorImpl$GT$9spec_next17hdcc41e292f138b6aE+0x1a>
+  12:	e7ff      	b.n	14 <_ZN89_$LT$core..ops..range..Range$LT$T$GT$$u20$as$u20$core..iter..range..RangeIteratorImpl$GT$9spec_next17hdcc41e292f138b6aE+0x14>
+  14:	2000      	movs	r0, #0
+  16:	9004      	str	r0, [sp, #16]
+  18:	e00e      	b.n	38 <_ZN89_$LT$core..ops..range..Range$LT$T$GT$$u20$as$u20$core..iter..range..RangeIteratorImpl$GT$9spec_next17hdcc41e292f138b6aE+0x38>
+  1a:	9803      	ldr	r0, [sp, #12]
+  1c:	6800      	ldr	r0, [r0, #0]
+  1e:	9001      	str	r0, [sp, #4]
+  20:	2101      	movs	r1, #1
+  22:	9102      	str	r1, [sp, #8]
+  24:	f7ff fffe 	bl	0 <_ZN89_$LT$core..ops..range..Range$LT$T$GT$$u20$as$u20$core..iter..range..RangeIteratorImpl$GT$9spec_next17hdcc41e292f138b6aE>
+			24: R_ARM_THM_CALL	_ZN49_$LT$usize$u20$as$u20$core..iter..range..Step$GT$17forward_unchecked17hb4af40415d8428ccE
+  28:	9b03      	ldr	r3, [sp, #12]
+  2a:	9901      	ldr	r1, [sp, #4]
+  2c:	4602      	mov	r2, r0
+  2e:	9802      	ldr	r0, [sp, #8]
+  30:	601a      	str	r2, [r3, #0]
+  32:	9105      	str	r1, [sp, #20]
+  34:	9004      	str	r0, [sp, #16]
+  36:	e7ff      	b.n	38 <_ZN89_$LT$core..ops..range..Range$LT$T$GT$$u20$as$u20$core..iter..range..RangeIteratorImpl$GT$9spec_next17hdcc41e292f138b6aE+0x38>
+  38:	9804      	ldr	r0, [sp, #16]
+  3a:	9905      	ldr	r1, [sp, #20]
+  3c:	b006      	add	sp, #24
+  3e:	bd80      	pop	{r7, pc}
+
+Disassembly of section .text.main:
+
+00000000 <main>:
+main():
+   0:	b580      	push	{r7, lr}
+   2:	466f      	mov	r7, sp
+   4:	b082      	sub	sp, #8
+   6:	6800      	ldr	r0, [r0, #0]
+   8:	9001      	str	r0, [sp, #4]
+   a:	2803      	cmp	r0, #3
+   c:	d304      	bcc.n	18 <main+0x18>
+   e:	e7ff      	b.n	10 <main+0x10>
+  10:	9801      	ldr	r0, [sp, #4]
+  12:	2802      	cmp	r0, #2
+  14:	d804      	bhi.n	20 <main+0x20>
+  16:	e002      	b.n	1e <main+0x1e>
+  18:	f7ff fffe 	bl	0 <main>
+			18: R_ARM_THM_CALL	_ZN4main20startWaitSpinner260017h87e25fe2cc7e4f3fE
+  1c:	e7ff      	b.n	1e <main+0x1e>
+  1e:	e7fe      	b.n	1e <main+0x1e>
+  20:	9801      	ldr	r0, [sp, #4]
+  22:	2804      	cmp	r0, #4
+  24:	d8fb      	bhi.n	1e <main+0x1e>
+  26:	e7ff      	b.n	28 <main+0x28>
+  28:	f7ff fffe 	bl	0 <main>
+			28: R_ARM_THM_CALL	_ZN4main20startWaitSpinner780017h99419b331f6ac552E
+  2c:	e7f7      	b.n	1e <main+0x1e>
+
+Disassembly of section .text._ZN4main20startWaitSpinner260017h87e25fe2cc7e4f3fE:
+
+00000000 <_ZN4main20startWaitSpinner260017h87e25fe2cc7e4f3fE>:
+_ZN4main20startWaitSpinner260017h87e25fe2cc7e4f3fE():
+   0:	b580      	push	{r7, lr}
+   2:	466f      	mov	r7, sp
+   4:	b0b2      	sub	sp, #200	@ 0xc8
+   6:	f7ff fffe 	bl	0 <vcsJmp3>
+			6: R_ARM_THM_CALL	vcsJmp3
+   a:	2000      	movs	r0, #0
+   c:	2180      	movs	r1, #128	@ 0x80
+   e:	f7ff fffe 	bl	0 <_ZN4main20startWaitSpinner260017h87e25fe2cc7e4f3fE>
+			e: R_ARM_THM_CALL	_ZN63_$LT$I$u20$as$u20$core..iter..traits..collect..IntoIterator$GT$9into_iter17h3a632ce36439d360E
+  12:	f8ad 002c 	strh.w	r0, [sp, #44]	@ 0x2c
+  16:	f8ad 102e 	strh.w	r1, [sp, #46]	@ 0x2e
+  1a:	e7ff      	b.n	1c <_ZN4main20startWaitSpinner260017h87e25fe2cc7e4f3fE+0x1c>
+  1c:	a80b      	add	r0, sp, #44	@ 0x2c
+  1e:	f7ff fffe 	bl	0 <_ZN4main20startWaitSpinner260017h87e25fe2cc7e4f3fE>
+			1e: R_ARM_THM_CALL	_ZN4core4iter5range101_$LT$impl$u20$core..iter..traits..iterator..Iterator$u20$for$u20$core..ops..range..Range$LT$A$GT$$GT$4next17h8e7f90b3e456a114E
+  22:	f8ad 0030 	strh.w	r0, [sp, #48]	@ 0x30
+  26:	f8ad 1032 	strh.w	r1, [sp, #50]	@ 0x32
+  2a:	f8bd 0030 	ldrh.w	r0, [sp, #48]	@ 0x30
+  2e:	07c0      	lsls	r0, r0, #31
+  30:	b130      	cbz	r0, 40 <_ZN4main20startWaitSpinner260017h87e25fe2cc7e4f3fE+0x40>
+  32:	e7ff      	b.n	34 <_ZN4main20startWaitSpinner260017h87e25fe2cc7e4f3fE+0x34>
+  34:	f8bd 0032 	ldrh.w	r0, [sp, #50]	@ 0x32
+  38:	2100      	movs	r1, #0
+  3a:	f7ff fffe 	bl	0 <vcsWrite5>
+			3a: R_ARM_THM_CALL	vcsWrite5
+  3e:	e7ed      	b.n	1c <_ZN4main20startWaitSpinner260017h87e25fe2cc7e4f3fE+0x1c>
+  40:	f7ff fffe 	bl	0 <vcsJmp3>
+			40: R_ARM_THM_CALL	vcsJmp3
+  44:	2002      	movs	r0, #2
+  46:	9009      	str	r0, [sp, #36]	@ 0x24
+  48:	f7ff fffe 	bl	0 <vcsSta3>
+			48: R_ARM_THM_CALL	vcsSta3
+  4c:	20ff      	movs	r0, #255	@ 0xff
+  4e:	9007      	str	r0, [sp, #28]
+  50:	f7ff fffe 	bl	0 <vcsLdx2>
+			50: R_ARM_THM_CALL	vcsLdx2
+  54:	f7ff fffe 	bl	0 <vcsTxs2>
+			54: R_ARM_THM_CALL	vcsTxs2
+  58:	2011      	movs	r0, #17
+  5a:	f7ff fffe 	bl	0 <vcsSta3>
+			5a: R_ARM_THM_CALL	vcsSta3
+  5e:	2008      	movs	r0, #8
+  60:	210a      	movs	r1, #10
+  62:	f7ff fffe 	bl	0 <vcsWrite5>
+			62: R_ARM_THM_CALL	vcsWrite5
+  66:	2009      	movs	r0, #9
+  68:	2182      	movs	r1, #130	@ 0x82
+  6a:	9106      	str	r1, [sp, #24]
+  6c:	f7ff fffe 	bl	0 <vcsWrite5>
+			6c: R_ARM_THM_CALL	vcsWrite5
+  70:	9906      	ldr	r1, [sp, #24]
+  72:	2006      	movs	r0, #6
+  74:	f7ff fffe 	bl	0 <vcsWrite5>
+			74: R_ARM_THM_CALL	vcsWrite5
+  78:	9907      	ldr	r1, [sp, #28]
+  7a:	201b      	movs	r0, #27
+  7c:	f7ff fffe 	bl	0 <vcsWrite5>
+			7c: R_ARM_THM_CALL	vcsWrite5
+  80:	2004      	movs	r0, #4
+  82:	2107      	movs	r1, #7
+  84:	9108      	str	r1, [sp, #32]
+  86:	f7ff fffe 	bl	0 <vcsWrite5>
+			86: R_ARM_THM_CALL	vcsWrite5
+  8a:	9907      	ldr	r1, [sp, #28]
+  8c:	201c      	movs	r0, #28
+  8e:	f7ff fffe 	bl	0 <vcsWrite5>
+			8e: R_ARM_THM_CALL	vcsWrite5
+  92:	9808      	ldr	r0, [sp, #32]
+  94:	2100      	movs	r1, #0
+  96:	910a      	str	r1, [sp, #40]	@ 0x28
+  98:	f7ff fffe 	bl	0 <vcsWrite5>
+			98: R_ARM_THM_CALL	vcsWrite5
+  9c:	2021      	movs	r0, #33	@ 0x21
+  9e:	2130      	movs	r1, #48	@ 0x30
+  a0:	f7ff fffe 	bl	0 <vcsWrite5>
+			a0: R_ARM_THM_CALL	vcsWrite5
+  a4:	f7ff fffe 	bl	0 <vcsNop2>
+			a4: R_ARM_THM_CALL	vcsNop2
+  a8:	2010      	movs	r0, #16
+  aa:	f7ff fffe 	bl	0 <vcsSta3>
+			aa: R_ARM_THM_CALL	vcsSta3
+  ae:	9809      	ldr	r0, [sp, #36]	@ 0x24
+  b0:	f7ff fffe 	bl	0 <vcsSta3>
+			b0: R_ARM_THM_CALL	vcsSta3
+  b4:	202a      	movs	r0, #42	@ 0x2a
+  b6:	f7ff fffe 	bl	0 <vcsSta3>
+			b6: R_ARM_THM_CALL	vcsSta3
+  ba:	980a      	ldr	r0, [sp, #40]	@ 0x28
+  bc:	2120      	movs	r1, #32
+  be:	f7ff fffe 	bl	0 <_ZN4main20startWaitSpinner260017h87e25fe2cc7e4f3fE>
+			be: R_ARM_THM_CALL	_ZN63_$LT$I$u20$as$u20$core..iter..traits..collect..IntoIterator$GT$9into_iter17h3a632ce36439d360E
+  c2:	f8ad 0034 	strh.w	r0, [sp, #52]	@ 0x34
+  c6:	f8ad 1036 	strh.w	r1, [sp, #54]	@ 0x36
+  ca:	e7ff      	b.n	cc <_ZN4main20startWaitSpinner260017h87e25fe2cc7e4f3fE+0xcc>
+  cc:	a80d      	add	r0, sp, #52	@ 0x34
+  ce:	f7ff fffe 	bl	0 <_ZN4main20startWaitSpinner260017h87e25fe2cc7e4f3fE>
+			ce: R_ARM_THM_CALL	_ZN4core4iter5range101_$LT$impl$u20$core..iter..traits..iterator..Iterator$u20$for$u20$core..ops..range..Range$LT$A$GT$$GT$4next17h8e7f90b3e456a114E
+  d2:	f8ad 0038 	strh.w	r0, [sp, #56]	@ 0x38
+  d6:	f8ad 103a 	strh.w	r1, [sp, #58]	@ 0x3a
+  da:	f8bd 0038 	ldrh.w	r0, [sp, #56]	@ 0x38
+  de:	07c0      	lsls	r0, r0, #31
+  e0:	b160      	cbz	r0, fc <_ZN4main20startWaitSpinner260017h87e25fe2cc7e4f3fE+0xfc>
+  e2:	e7ff      	b.n	e4 <_ZN4main20startWaitSpinner260017h87e25fe2cc7e4f3fE+0xe4>
+  e4:	f8bd 003a 	ldrh.w	r0, [sp, #58]	@ 0x3a
+  e8:	4601      	mov	r1, r0
+  ea:	9104      	str	r1, [sp, #16]
+  ec:	f100 0180 	add.w	r1, r0, #128	@ 0x80
+  f0:	b288      	uxth	r0, r1
+  f2:	460a      	mov	r2, r1
+  f4:	9205      	str	r2, [sp, #20]
+  f6:	4288      	cmp	r0, r1
+  f8:	d153      	bne.n	1a2 <_ZN4main20startWaitSpinner260017h87e25fe2cc7e4f3fE+0x1a2>
+  fa:	e043      	b.n	184 <_ZN4main20startWaitSpinner260017h87e25fe2cc7e4f3fE+0x184>
+  fc:	f7ff fffe 	bl	0 <vcsJmp3>
+			fc: R_ARM_THM_CALL	vcsJmp3
+ 100:	2000      	movs	r0, #0
+ 102:	215c      	movs	r1, #92	@ 0x5c
+ 104:	f7ff fffe 	bl	0 <_ZN4main20startWaitSpinner260017h87e25fe2cc7e4f3fE>
+			104: R_ARM_THM_CALL	_ZN63_$LT$I$u20$as$u20$core..iter..traits..collect..IntoIterator$GT$9into_iter17hb911addd574f542aE
+ 108:	9017      	str	r0, [sp, #92]	@ 0x5c
+ 10a:	9118      	str	r1, [sp, #96]	@ 0x60
+ 10c:	e7ff      	b.n	10e <_ZN4main20startWaitSpinner260017h87e25fe2cc7e4f3fE+0x10e>
+ 10e:	a817      	add	r0, sp, #92	@ 0x5c
+ 110:	f7ff fffe 	bl	0 <_ZN4main20startWaitSpinner260017h87e25fe2cc7e4f3fE>
+			110: R_ARM_THM_CALL	_ZN4core4iter5range101_$LT$impl$u20$core..iter..traits..iterator..Iterator$u20$for$u20$core..ops..range..Range$LT$A$GT$$GT$4next17h26e4a23f0d651220E
+ 114:	9019      	str	r0, [sp, #100]	@ 0x64
+ 116:	911a      	str	r1, [sp, #104]	@ 0x68
+ 118:	9819      	ldr	r0, [sp, #100]	@ 0x64
+ 11a:	07c0      	lsls	r0, r0, #31
+ 11c:	b158      	cbz	r0, 136 <_ZN4main20startWaitSpinner260017h87e25fe2cc7e4f3fE+0x136>
+ 11e:	e7ff      	b.n	120 <_ZN4main20startWaitSpinner260017h87e25fe2cc7e4f3fE+0x120>
+ 120:	991a      	ldr	r1, [sp, #104]	@ 0x68
+ 122:	9102      	str	r1, [sp, #8]
+ 124:	20a0      	movs	r0, #160	@ 0xa0
+ 126:	fa10 f181 	uxtah	r1, r0, r1
+ 12a:	b288      	uxth	r0, r1
+ 12c:	460a      	mov	r2, r1
+ 12e:	9203      	str	r2, [sp, #12]
+ 130:	4288      	cmp	r0, r1
+ 132:	d111      	bne.n	158 <_ZN4main20startWaitSpinner260017h87e25fe2cc7e4f3fE+0x158>
+ 134:	e004      	b.n	140 <_ZN4main20startWaitSpinner260017h87e25fe2cc7e4f3fE+0x140>
+ 136:	20a1      	movs	r0, #161	@ 0xa1
+ 138:	f7ff fffe 	bl	0 <vcsJmpToRam3>
+			138: R_ARM_THM_CALL	vcsJmpToRam3
+ 13c:	b032      	add	sp, #200	@ 0xc8
+ 13e:	bd80      	pop	{r7, pc}
+ 140:	f240 0100 	movw	r1, #0
+			140: R_ARM_THM_MOVW_ABS_NC	.Lanon.175670ed0f22630e69c7f6ae3736dddf.7
+ 144:	f2c0 0100 	movt	r1, #0
+			144: R_ARM_THM_MOVT_ABS	.Lanon.175670ed0f22630e69c7f6ae3736dddf.7
+ 148:	a81b      	add	r0, sp, #108	@ 0x6c
+ 14a:	225c      	movs	r2, #92	@ 0x5c
+ 14c:	f7ff fffe 	bl	0 <__aeabi_memcpy>
+			14c: R_ARM_THM_CALL	__aeabi_memcpy
+ 150:	9802      	ldr	r0, [sp, #8]
+ 152:	285c      	cmp	r0, #92	@ 0x5c
+ 154:	d306      	bcc.n	164 <_ZN4main20startWaitSpinner260017h87e25fe2cc7e4f3fE+0x164>
+ 156:	e00d      	b.n	174 <_ZN4main20startWaitSpinner260017h87e25fe2cc7e4f3fE+0x174>
+ 158:	f240 0000 	movw	r0, #0
+			158: R_ARM_THM_MOVW_ABS_NC	.Lanon.175670ed0f22630e69c7f6ae3736dddf.9
+ 15c:	f2c0 0000 	movt	r0, #0
+			15c: R_ARM_THM_MOVT_ABS	.Lanon.175670ed0f22630e69c7f6ae3736dddf.9
+ 160:	f7ff fffe 	bl	0 <_ZN4core9panicking11panic_const24panic_const_add_overflow17h4bfeb5bb9e09c4a0E>
+			160: R_ARM_THM_CALL	_ZN4core9panicking11panic_const24panic_const_add_overflow17h4bfeb5bb9e09c4a0E
+ 164:	9803      	ldr	r0, [sp, #12]
+ 166:	9a02      	ldr	r2, [sp, #8]
+ 168:	a91b      	add	r1, sp, #108	@ 0x6c
+ 16a:	5c89      	ldrb	r1, [r1, r2]
+ 16c:	b280      	uxth	r0, r0
+ 16e:	f7ff fffe 	bl	0 <vcsWrite5>
+			16e: R_ARM_THM_CALL	vcsWrite5
+ 172:	e7cc      	b.n	10e <_ZN4main20startWaitSpinner260017h87e25fe2cc7e4f3fE+0x10e>
+ 174:	9802      	ldr	r0, [sp, #8]
+ 176:	f240 0200 	movw	r2, #0
+			176: R_ARM_THM_MOVW_ABS_NC	.Lanon.175670ed0f22630e69c7f6ae3736dddf.10
+ 17a:	f2c0 0200 	movt	r2, #0
+			17a: R_ARM_THM_MOVT_ABS	.Lanon.175670ed0f22630e69c7f6ae3736dddf.10
+ 17e:	215c      	movs	r1, #92	@ 0x5c
+ 180:	f7ff fffe 	bl	0 <_ZN4core9panicking18panic_bounds_check17h3a9322687407ebd2E>
+			180: R_ARM_THM_CALL	_ZN4core9panicking18panic_bounds_check17h3a9322687407ebd2E
+ 184:	f240 0100 	movw	r1, #0
+			184: R_ARM_THM_MOVW_ABS_NC	.Lanon.175670ed0f22630e69c7f6ae3736dddf.12
+ 188:	f2c0 0100 	movt	r1, #0
+			188: R_ARM_THM_MOVT_ABS	.Lanon.175670ed0f22630e69c7f6ae3736dddf.12
+ 18c:	a80f      	add	r0, sp, #60	@ 0x3c
+ 18e:	2220      	movs	r2, #32
+ 190:	f7ff fffe 	bl	0 <__aeabi_memcpy>
+			190: R_ARM_THM_CALL	__aeabi_memcpy
+ 194:	9804      	ldr	r0, [sp, #16]
+ 196:	b280      	uxth	r0, r0
+ 198:	4601      	mov	r1, r0
+ 19a:	9101      	str	r1, [sp, #4]
+ 19c:	2820      	cmp	r0, #32
+ 19e:	d306      	bcc.n	1ae <_ZN4main20startWaitSpinner260017h87e25fe2cc7e4f3fE+0x1ae>
+ 1a0:	e00d      	b.n	1be <_ZN4main20startWaitSpinner260017h87e25fe2cc7e4f3fE+0x1be>
+ 1a2:	f240 0000 	movw	r0, #0
+			1a2: R_ARM_THM_MOVW_ABS_NC	.Lanon.175670ed0f22630e69c7f6ae3736dddf.11
+ 1a6:	f2c0 0000 	movt	r0, #0
+			1a6: R_ARM_THM_MOVT_ABS	.Lanon.175670ed0f22630e69c7f6ae3736dddf.11
+ 1aa:	f7ff fffe 	bl	0 <_ZN4core9panicking11panic_const24panic_const_add_overflow17h4bfeb5bb9e09c4a0E>
+			1aa: R_ARM_THM_CALL	_ZN4core9panicking11panic_const24panic_const_add_overflow17h4bfeb5bb9e09c4a0E
+ 1ae:	9805      	ldr	r0, [sp, #20]
+ 1b0:	9a01      	ldr	r2, [sp, #4]
+ 1b2:	a90f      	add	r1, sp, #60	@ 0x3c
+ 1b4:	5c89      	ldrb	r1, [r1, r2]
+ 1b6:	b280      	uxth	r0, r0
+ 1b8:	f7ff fffe 	bl	0 <vcsWrite5>
+			1b8: R_ARM_THM_CALL	vcsWrite5
+ 1bc:	e786      	b.n	cc <_ZN4main20startWaitSpinner260017h87e25fe2cc7e4f3fE+0xcc>
+ 1be:	9801      	ldr	r0, [sp, #4]
+ 1c0:	f240 0200 	movw	r2, #0
+			1c0: R_ARM_THM_MOVW_ABS_NC	.Lanon.175670ed0f22630e69c7f6ae3736dddf.13
+ 1c4:	f2c0 0200 	movt	r2, #0
+			1c4: R_ARM_THM_MOVT_ABS	.Lanon.175670ed0f22630e69c7f6ae3736dddf.13
+ 1c8:	2120      	movs	r1, #32
+ 1ca:	f7ff fffe 	bl	0 <_ZN4core9panicking18panic_bounds_check17h3a9322687407ebd2E>
+			1ca: R_ARM_THM_CALL	_ZN4core9panicking18panic_bounds_check17h3a9322687407ebd2E
+
+Disassembly of section .text._ZN4main20startWaitSpinner780017h99419b331f6ac552E:
+
+00000000 <_ZN4main20startWaitSpinner780017h99419b331f6ac552E>:
+_ZN4main20startWaitSpinner780017h99419b331f6ac552E():
+   0:	b580      	push	{r7, lr}
+   2:	466f      	mov	r7, sp
+   4:	b0dc      	sub	sp, #368	@ 0x170
+   6:	f7ff fffe 	bl	0 <vcsJmp3>
+			6: R_ARM_THM_CALL	vcsJmp3
+   a:	f44f 5014 	mov.w	r0, #9472	@ 0x2500
+   e:	f8ad 006a 	strh.w	r0, [sp, #106]	@ 0x6a
+  12:	2000      	movs	r0, #0
+  14:	2104      	movs	r1, #4
+  16:	f7ff fffe 	bl	0 <_ZN4main20startWaitSpinner780017h99419b331f6ac552E>
+			16: R_ARM_THM_CALL	_ZN63_$LT$I$u20$as$u20$core..iter..traits..collect..IntoIterator$GT$9into_iter17hb911addd574f542aE
+  1a:	901b      	str	r0, [sp, #108]	@ 0x6c
+  1c:	911c      	str	r1, [sp, #112]	@ 0x70
+  1e:	e7ff      	b.n	20 <_ZN4main20startWaitSpinner780017h99419b331f6ac552E+0x20>
+  20:	a81b      	add	r0, sp, #108	@ 0x6c
+  22:	f7ff fffe 	bl	0 <_ZN4main20startWaitSpinner780017h99419b331f6ac552E>
+			22: R_ARM_THM_CALL	_ZN4core4iter5range101_$LT$impl$u20$core..iter..traits..iterator..Iterator$u20$for$u20$core..ops..range..Range$LT$A$GT$$GT$4next17h26e4a23f0d651220E
+  26:	901d      	str	r0, [sp, #116]	@ 0x74
+  28:	911e      	str	r1, [sp, #120]	@ 0x78
+  2a:	981d      	ldr	r0, [sp, #116]	@ 0x74
+  2c:	07c0      	lsls	r0, r0, #31
+  2e:	b148      	cbz	r0, 44 <_ZN4main20startWaitSpinner780017h99419b331f6ac552E+0x44>
+  30:	e7ff      	b.n	32 <_ZN4main20startWaitSpinner780017h99419b331f6ac552E+0x32>
+  32:	981e      	ldr	r0, [sp, #120]	@ 0x78
+  34:	9019      	str	r0, [sp, #100]	@ 0x64
+  36:	2000      	movs	r0, #0
+  38:	2108      	movs	r1, #8
+  3a:	f7ff fffe 	bl	0 <_ZN4main20startWaitSpinner780017h99419b331f6ac552E>
+			3a: R_ARM_THM_CALL	_ZN63_$LT$I$u20$as$u20$core..iter..traits..collect..IntoIterator$GT$9into_iter17hb911addd574f542aE
+  3e:	901f      	str	r0, [sp, #124]	@ 0x7c
+  40:	9120      	str	r1, [sp, #128]	@ 0x80
+  42:	e1af      	b.n	3a4 <_ZN4main20startWaitSpinner780017h99419b331f6ac552E+0x3a4>
+  44:	f7ff fffe 	bl	0 <vcsJmp3>
+			44: R_ARM_THM_CALL	vcsJmp3
+  48:	f44f 500c 	mov.w	r0, #8960	@ 0x2300
+  4c:	f8ad 006a 	strh.w	r0, [sp, #106]	@ 0x6a
+  50:	f8bd 006a 	ldrh.w	r0, [sp, #106]	@ 0x6a
+  54:	f7ff fffe 	bl	0 <_ZN4main20startWaitSpinner780017h99419b331f6ac552E>
+			54: R_ARM_THM_CALL	_ZN4main12writePadding17ha62616d34ee47109E
+  58:	f8ad 006a 	strh.w	r0, [sp, #106]	@ 0x6a
+  5c:	f8bd 006a 	ldrh.w	r0, [sp, #106]	@ 0x6a
+  60:	f7ff fffe 	bl	0 <_ZN4main20startWaitSpinner780017h99419b331f6ac552E>
+			60: R_ARM_THM_CALL	_ZN4main12writePadding17ha62616d34ee47109E
+  64:	f8ad 006a 	strh.w	r0, [sp, #106]	@ 0x6a
+  68:	2000      	movs	r0, #0
+  6a:	2107      	movs	r1, #7
+  6c:	f7ff fffe 	bl	0 <_ZN4main20startWaitSpinner780017h99419b331f6ac552E>
+			6c: R_ARM_THM_CALL	_ZN63_$LT$I$u20$as$u20$core..iter..traits..collect..IntoIterator$GT$9into_iter17h562d3e01c7f43990E
+  70:	f88d 00bc 	strb.w	r0, [sp, #188]	@ 0xbc
+  74:	f88d 10bd 	strb.w	r1, [sp, #189]	@ 0xbd
+  78:	e7ff      	b.n	7a <_ZN4main20startWaitSpinner780017h99419b331f6ac552E+0x7a>
+  7a:	a82f      	add	r0, sp, #188	@ 0xbc
+  7c:	f7ff fffe 	bl	0 <_ZN4main20startWaitSpinner780017h99419b331f6ac552E>
+			7c: R_ARM_THM_CALL	_ZN4core4iter5range101_$LT$impl$u20$core..iter..traits..iterator..Iterator$u20$for$u20$core..ops..range..Range$LT$A$GT$$GT$4next17h90f54a073599a9aeE
+  80:	f000 0001 	and.w	r0, r0, #1
+  84:	f807 0cb2 	strb.w	r0, [r7, #-178]
+  88:	f807 1cb1 	strb.w	r1, [r7, #-177]
+  8c:	f817 0cb2 	ldrb.w	r0, [r7, #-178]
+  90:	07c0      	lsls	r0, r0, #31
+  92:	b150      	cbz	r0, aa <_ZN4main20startWaitSpinner780017h99419b331f6ac552E+0xaa>
+  94:	e7ff      	b.n	96 <_ZN4main20startWaitSpinner780017h99419b331f6ac552E+0x96>
+  96:	f817 0cb1 	ldrb.w	r0, [r7, #-177]
+  9a:	9018      	str	r0, [sp, #96]	@ 0x60
+  9c:	2000      	movs	r0, #0
+  9e:	2106      	movs	r1, #6
+  a0:	f7ff fffe 	bl	0 <_ZN4main20startWaitSpinner780017h99419b331f6ac552E>
+			a0: R_ARM_THM_CALL	_ZN63_$LT$I$u20$as$u20$core..iter..traits..collect..IntoIterator$GT$9into_iter17h13a0b2aadd51a0efE
+  a4:	9030      	str	r0, [sp, #192]	@ 0xc0
+  a6:	9131      	str	r1, [sp, #196]	@ 0xc4
+  a8:	e11f      	b.n	2ea <_ZN4main20startWaitSpinner780017h99419b331f6ac552E+0x2ea>
+  aa:	2000      	movs	r0, #0
+  ac:	2113      	movs	r1, #19
+  ae:	f7ff fffe 	bl	0 <_ZN4main20startWaitSpinner780017h99419b331f6ac552E>
+			ae: R_ARM_THM_CALL	_ZN63_$LT$I$u20$as$u20$core..iter..traits..collect..IntoIterator$GT$9into_iter17h13a0b2aadd51a0efE
+  b2:	9034      	str	r0, [sp, #208]	@ 0xd0
+  b4:	9135      	str	r1, [sp, #212]	@ 0xd4
+  b6:	e7ff      	b.n	b8 <_ZN4main20startWaitSpinner780017h99419b331f6ac552E+0xb8>
+  b8:	a834      	add	r0, sp, #208	@ 0xd0
+  ba:	f7ff fffe 	bl	0 <_ZN4main20startWaitSpinner780017h99419b331f6ac552E>
+			ba: R_ARM_THM_CALL	_ZN4core4iter5range101_$LT$impl$u20$core..iter..traits..iterator..Iterator$u20$for$u20$core..ops..range..Range$LT$A$GT$$GT$4next17h9a98ccf1522da18aE
+  be:	9036      	str	r0, [sp, #216]	@ 0xd8
+  c0:	9137      	str	r1, [sp, #220]	@ 0xdc
+  c2:	9836      	ldr	r0, [sp, #216]	@ 0xd8
+  c4:	07c0      	lsls	r0, r0, #31
+  c6:	b138      	cbz	r0, d8 <_ZN4main20startWaitSpinner780017h99419b331f6ac552E+0xd8>
+  c8:	e7ff      	b.n	ca <_ZN4main20startWaitSpinner780017h99419b331f6ac552E+0xca>
+  ca:	f8bd 006a 	ldrh.w	r0, [sp, #106]	@ 0x6a
+  ce:	f7ff fffe 	bl	0 <_ZN4main20startWaitSpinner780017h99419b331f6ac552E>
+			ce: R_ARM_THM_CALL	_ZN4main12writePadding17ha62616d34ee47109E
+  d2:	f8ad 006a 	strh.w	r0, [sp, #106]	@ 0x6a
+  d6:	e7ef      	b.n	b8 <_ZN4main20startWaitSpinner780017h99419b331f6ac552E+0xb8>
+  d8:	f7ff fffe 	bl	0 <vcsJmp3>
+			d8: R_ARM_THM_CALL	vcsJmp3
+  dc:	f44f 5010 	mov.w	r0, #9216	@ 0x2400
+  e0:	f8ad 006a 	strh.w	r0, [sp, #106]	@ 0x6a
+  e4:	2000      	movs	r0, #0
+  e6:	2107      	movs	r1, #7
+  e8:	f7ff fffe 	bl	0 <_ZN4main20startWaitSpinner780017h99419b331f6ac552E>
+			e8: R_ARM_THM_CALL	_ZN63_$LT$I$u20$as$u20$core..iter..traits..collect..IntoIterator$GT$9into_iter17h562d3e01c7f43990E
+  ec:	f88d 00e0 	strb.w	r0, [sp, #224]	@ 0xe0
+  f0:	f88d 10e1 	strb.w	r1, [sp, #225]	@ 0xe1
+  f4:	e7ff      	b.n	f6 <_ZN4main20startWaitSpinner780017h99419b331f6ac552E+0xf6>
+  f6:	a838      	add	r0, sp, #224	@ 0xe0
+  f8:	f7ff fffe 	bl	0 <_ZN4main20startWaitSpinner780017h99419b331f6ac552E>
+			f8: R_ARM_THM_CALL	_ZN4core4iter5range101_$LT$impl$u20$core..iter..traits..iterator..Iterator$u20$for$u20$core..ops..range..Range$LT$A$GT$$GT$4next17h90f54a073599a9aeE
+  fc:	f000 0001 	and.w	r0, r0, #1
+ 100:	f807 0c8e 	strb.w	r0, [r7, #-142]
+ 104:	f807 1c8d 	strb.w	r1, [r7, #-141]
+ 108:	f817 0c8e 	ldrb.w	r0, [r7, #-142]
+ 10c:	07c0      	lsls	r0, r0, #31
+ 10e:	b168      	cbz	r0, 12c <_ZN4main20startWaitSpinner780017h99419b331f6ac552E+0x12c>
+ 110:	e7ff      	b.n	112 <_ZN4main20startWaitSpinner780017h99419b331f6ac552E+0x112>
+ 112:	f817 0c8d 	ldrb.w	r0, [r7, #-141]
+ 116:	f8bd 106a 	ldrh.w	r1, [sp, #106]	@ 0x6a
+ 11a:	9116      	str	r1, [sp, #88]	@ 0x58
+ 11c:	00c1      	lsls	r1, r0, #3
+ 11e:	4608      	mov	r0, r1
+ 120:	9017      	str	r0, [sp, #92]	@ 0x5c
+ 122:	2000      	movs	r0, #0
+ 124:	ebb0 2f11 	cmp.w	r0, r1, lsr #8
+ 128:	d157      	bne.n	1da <_ZN4main20startWaitSpinner780017h99419b331f6ac552E+0x1da>
+ 12a:	e047      	b.n	1bc <_ZN4main20startWaitSpinner780017h99419b331f6ac552E+0x1bc>
+ 12c:	f7ff fffe 	bl	0 <vcsJmp3>
+			12c: R_ARM_THM_CALL	vcsJmp3
+ 130:	2000      	movs	r0, #0
+ 132:	2179      	movs	r1, #121	@ 0x79
+ 134:	f7ff fffe 	bl	0 <_ZN4main20startWaitSpinner780017h99419b331f6ac552E>
+			134: R_ARM_THM_CALL	_ZN63_$LT$I$u20$as$u20$core..iter..traits..collect..IntoIterator$GT$9into_iter17hb911addd574f542aE
+ 138:	9039      	str	r0, [sp, #228]	@ 0xe4
+ 13a:	913a      	str	r1, [sp, #232]	@ 0xe8
+ 13c:	e7ff      	b.n	13e <_ZN4main20startWaitSpinner780017h99419b331f6ac552E+0x13e>
+ 13e:	a839      	add	r0, sp, #228	@ 0xe4
+ 140:	f7ff fffe 	bl	0 <_ZN4main20startWaitSpinner780017h99419b331f6ac552E>
+			140: R_ARM_THM_CALL	_ZN4core4iter5range101_$LT$impl$u20$core..iter..traits..iterator..Iterator$u20$for$u20$core..ops..range..Range$LT$A$GT$$GT$4next17h26e4a23f0d651220E
+ 144:	903b      	str	r0, [sp, #236]	@ 0xec
+ 146:	913c      	str	r1, [sp, #240]	@ 0xf0
+ 148:	983b      	ldr	r0, [sp, #236]	@ 0xec
+ 14a:	07c0      	lsls	r0, r0, #31
+ 14c:	b160      	cbz	r0, 168 <_ZN4main20startWaitSpinner780017h99419b331f6ac552E+0x168>
+ 14e:	e7ff      	b.n	150 <_ZN4main20startWaitSpinner780017h99419b331f6ac552E+0x150>
+ 150:	993c      	ldr	r1, [sp, #240]	@ 0xf0
+ 152:	9114      	str	r1, [sp, #80]	@ 0x50
+ 154:	f44f 5008 	mov.w	r0, #8704	@ 0x2200
+ 158:	fa10 f181 	uxtah	r1, r0, r1
+ 15c:	b288      	uxth	r0, r1
+ 15e:	460a      	mov	r2, r1
+ 160:	9215      	str	r2, [sp, #84]	@ 0x54
+ 162:	4288      	cmp	r0, r1
+ 164:	d113      	bne.n	18e <_ZN4main20startWaitSpinner780017h99419b331f6ac552E+0x18e>
+ 166:	e005      	b.n	174 <_ZN4main20startWaitSpinner780017h99419b331f6ac552E+0x174>
+ 168:	f44f 5008 	mov.w	r0, #8704	@ 0x2200
+ 16c:	f7ff fffe 	bl	0 <vcsJmpToRam3>
+			16c: R_ARM_THM_CALL	vcsJmpToRam3
+ 170:	b05c      	add	sp, #368	@ 0x170
+ 172:	bd80      	pop	{r7, pc}
+ 174:	f240 0100 	movw	r1, #0
+			174: R_ARM_THM_MOVW_ABS_NC	.Lanon.175670ed0f22630e69c7f6ae3736dddf.14
+ 178:	f2c0 0100 	movt	r1, #0
+			178: R_ARM_THM_MOVT_ABS	.Lanon.175670ed0f22630e69c7f6ae3736dddf.14
+ 17c:	f1a7 0079 	sub.w	r0, r7, #121	@ 0x79
+ 180:	2279      	movs	r2, #121	@ 0x79
+ 182:	f7ff fffe 	bl	0 <__aeabi_memcpy>
+			182: R_ARM_THM_CALL	__aeabi_memcpy
+ 186:	9814      	ldr	r0, [sp, #80]	@ 0x50
+ 188:	2879      	cmp	r0, #121	@ 0x79
+ 18a:	d306      	bcc.n	19a <_ZN4main20startWaitSpinner780017h99419b331f6ac552E+0x19a>
+ 18c:	e00e      	b.n	1ac <_ZN4main20startWaitSpinner780017h99419b331f6ac552E+0x1ac>
+ 18e:	f240 0000 	movw	r0, #0
+			18e: R_ARM_THM_MOVW_ABS_NC	.Lanon.175670ed0f22630e69c7f6ae3736dddf.15
+ 192:	f2c0 0000 	movt	r0, #0
+			192: R_ARM_THM_MOVT_ABS	.Lanon.175670ed0f22630e69c7f6ae3736dddf.15
+ 196:	f7ff fffe 	bl	0 <_ZN4core9panicking11panic_const24panic_const_add_overflow17h4bfeb5bb9e09c4a0E>
+			196: R_ARM_THM_CALL	_ZN4core9panicking11panic_const24panic_const_add_overflow17h4bfeb5bb9e09c4a0E
+ 19a:	9815      	ldr	r0, [sp, #84]	@ 0x54
+ 19c:	9a14      	ldr	r2, [sp, #80]	@ 0x50
+ 19e:	f1a7 0179 	sub.w	r1, r7, #121	@ 0x79
+ 1a2:	5c89      	ldrb	r1, [r1, r2]
+ 1a4:	b280      	uxth	r0, r0
+ 1a6:	f7ff fffe 	bl	0 <vcsWrite6>
+			1a6: R_ARM_THM_CALL	vcsWrite6
+ 1aa:	e7c8      	b.n	13e <_ZN4main20startWaitSpinner780017h99419b331f6ac552E+0x13e>
+ 1ac:	9814      	ldr	r0, [sp, #80]	@ 0x50
+ 1ae:	f240 0200 	movw	r2, #0
+			1ae: R_ARM_THM_MOVW_ABS_NC	.Lanon.175670ed0f22630e69c7f6ae3736dddf.16
+ 1b2:	f2c0 0200 	movt	r2, #0
+			1b2: R_ARM_THM_MOVT_ABS	.Lanon.175670ed0f22630e69c7f6ae3736dddf.16
+ 1b6:	2179      	movs	r1, #121	@ 0x79
+ 1b8:	f7ff fffe 	bl	0 <_ZN4core9panicking18panic_bounds_check17h3a9322687407ebd2E>
+			1b8: R_ARM_THM_CALL	_ZN4core9panicking18panic_bounds_check17h3a9322687407ebd2E
+ 1bc:	9917      	ldr	r1, [sp, #92]	@ 0x5c
+ 1be:	9816      	ldr	r0, [sp, #88]	@ 0x58
+ 1c0:	b280      	uxth	r0, r0
+ 1c2:	b2c9      	uxtb	r1, r1
+ 1c4:	f7ff fffe 	bl	0 <vcsWrite6>
+			1c4: R_ARM_THM_CALL	vcsWrite6
+ 1c8:	f8bd 006a 	ldrh.w	r0, [sp, #106]	@ 0x6a
+ 1cc:	1c41      	adds	r1, r0, #1
+ 1ce:	b288      	uxth	r0, r1
+ 1d0:	460a      	mov	r2, r1
+ 1d2:	9213      	str	r2, [sp, #76]	@ 0x4c
+ 1d4:	4288      	cmp	r0, r1
+ 1d6:	d114      	bne.n	202 <_ZN4main20startWaitSpinner780017h99419b331f6ac552E+0x202>
+ 1d8:	e005      	b.n	1e6 <_ZN4main20startWaitSpinner780017h99419b331f6ac552E+0x1e6>
+ 1da:	f240 0000 	movw	r0, #0
+			1da: R_ARM_THM_MOVW_ABS_NC	.Lanon.175670ed0f22630e69c7f6ae3736dddf.17
+ 1de:	f2c0 0000 	movt	r0, #0
+			1de: R_ARM_THM_MOVT_ABS	.Lanon.175670ed0f22630e69c7f6ae3736dddf.17
+ 1e2:	f7ff fffe 	bl	0 <_ZN4core9panicking11panic_const24panic_const_mul_overflow17h81d852b5f0a83503E>
+			1e2: R_ARM_THM_CALL	_ZN4core9panicking11panic_const24panic_const_mul_overflow17h81d852b5f0a83503E
+ 1e6:	9813      	ldr	r0, [sp, #76]	@ 0x4c
+ 1e8:	b280      	uxth	r0, r0
+ 1ea:	2140      	movs	r1, #64	@ 0x40
+ 1ec:	f7ff fffe 	bl	0 <vcsWrite6>
+			1ec: R_ARM_THM_CALL	vcsWrite6
+ 1f0:	f8bd 006a 	ldrh.w	r0, [sp, #106]	@ 0x6a
+ 1f4:	1c81      	adds	r1, r0, #2
+ 1f6:	b288      	uxth	r0, r1
+ 1f8:	460a      	mov	r2, r1
+ 1fa:	9212      	str	r2, [sp, #72]	@ 0x48
+ 1fc:	4288      	cmp	r0, r1
+ 1fe:	d114      	bne.n	22a <_ZN4main20startWaitSpinner780017h99419b331f6ac552E+0x22a>
+ 200:	e005      	b.n	20e <_ZN4main20startWaitSpinner780017h99419b331f6ac552E+0x20e>
+ 202:	f240 0000 	movw	r0, #0
+			202: R_ARM_THM_MOVW_ABS_NC	.Lanon.175670ed0f22630e69c7f6ae3736dddf.18
+ 206:	f2c0 0000 	movt	r0, #0
+			206: R_ARM_THM_MOVT_ABS	.Lanon.175670ed0f22630e69c7f6ae3736dddf.18
+ 20a:	f7ff fffe 	bl	0 <_ZN4core9panicking11panic_const24panic_const_add_overflow17h4bfeb5bb9e09c4a0E>
+			20a: R_ARM_THM_CALL	_ZN4core9panicking11panic_const24panic_const_add_overflow17h4bfeb5bb9e09c4a0E
+ 20e:	9812      	ldr	r0, [sp, #72]	@ 0x48
+ 210:	b280      	uxth	r0, r0
+ 212:	2125      	movs	r1, #37	@ 0x25
+ 214:	f7ff fffe 	bl	0 <vcsWrite6>
+			214: R_ARM_THM_CALL	vcsWrite6
+ 218:	f8bd 006a 	ldrh.w	r0, [sp, #106]	@ 0x6a
+ 21c:	1cc1      	adds	r1, r0, #3
+ 21e:	b288      	uxth	r0, r1
+ 220:	460a      	mov	r2, r1
+ 222:	9211      	str	r2, [sp, #68]	@ 0x44
+ 224:	4288      	cmp	r0, r1
+ 226:	d114      	bne.n	252 <_ZN4main20startWaitSpinner780017h99419b331f6ac552E+0x252>
+ 228:	e005      	b.n	236 <_ZN4main20startWaitSpinner780017h99419b331f6ac552E+0x236>
+ 22a:	f240 0000 	movw	r0, #0
+			22a: R_ARM_THM_MOVW_ABS_NC	.Lanon.175670ed0f22630e69c7f6ae3736dddf.19
+ 22e:	f2c0 0000 	movt	r0, #0
+			22e: R_ARM_THM_MOVT_ABS	.Lanon.175670ed0f22630e69c7f6ae3736dddf.19
+ 232:	f7ff fffe 	bl	0 <_ZN4core9panicking11panic_const24panic_const_add_overflow17h4bfeb5bb9e09c4a0E>
+			232: R_ARM_THM_CALL	_ZN4core9panicking11panic_const24panic_const_add_overflow17h4bfeb5bb9e09c4a0E
+ 236:	9811      	ldr	r0, [sp, #68]	@ 0x44
+ 238:	b280      	uxth	r0, r0
+ 23a:	2118      	movs	r1, #24
+ 23c:	f7ff fffe 	bl	0 <vcsWrite6>
+			23c: R_ARM_THM_CALL	vcsWrite6
+ 240:	f8bd 006a 	ldrh.w	r0, [sp, #106]	@ 0x6a
+ 244:	1d01      	adds	r1, r0, #4
+ 246:	b288      	uxth	r0, r1
+ 248:	460a      	mov	r2, r1
+ 24a:	9210      	str	r2, [sp, #64]	@ 0x40
+ 24c:	4288      	cmp	r0, r1
+ 24e:	d114      	bne.n	27a <_ZN4main20startWaitSpinner780017h99419b331f6ac552E+0x27a>
+ 250:	e005      	b.n	25e <_ZN4main20startWaitSpinner780017h99419b331f6ac552E+0x25e>
+ 252:	f240 0000 	movw	r0, #0
+			252: R_ARM_THM_MOVW_ABS_NC	.Lanon.175670ed0f22630e69c7f6ae3736dddf.20
+ 256:	f2c0 0000 	movt	r0, #0
+			256: R_ARM_THM_MOVT_ABS	.Lanon.175670ed0f22630e69c7f6ae3736dddf.20
+ 25a:	f7ff fffe 	bl	0 <_ZN4core9panicking11panic_const24panic_const_add_overflow17h4bfeb5bb9e09c4a0E>
+			25a: R_ARM_THM_CALL	_ZN4core9panicking11panic_const24panic_const_add_overflow17h4bfeb5bb9e09c4a0E
+ 25e:	9810      	ldr	r0, [sp, #64]	@ 0x40
+ 260:	b280      	uxth	r0, r0
+ 262:	2110      	movs	r1, #16
+ 264:	f7ff fffe 	bl	0 <vcsWrite6>
+			264: R_ARM_THM_CALL	vcsWrite6
+ 268:	f8bd 006a 	ldrh.w	r0, [sp, #106]	@ 0x6a
+ 26c:	1d41      	adds	r1, r0, #5
+ 26e:	b288      	uxth	r0, r1
+ 270:	460a      	mov	r2, r1
+ 272:	920f      	str	r2, [sp, #60]	@ 0x3c
+ 274:	4288      	cmp	r0, r1
+ 276:	d114      	bne.n	2a2 <_ZN4main20startWaitSpinner780017h99419b331f6ac552E+0x2a2>
+ 278:	e005      	b.n	286 <_ZN4main20startWaitSpinner780017h99419b331f6ac552E+0x286>
+ 27a:	f240 0000 	movw	r0, #0
+			27a: R_ARM_THM_MOVW_ABS_NC	.Lanon.175670ed0f22630e69c7f6ae3736dddf.21
+ 27e:	f2c0 0000 	movt	r0, #0
+			27e: R_ARM_THM_MOVT_ABS	.Lanon.175670ed0f22630e69c7f6ae3736dddf.21
+ 282:	f7ff fffe 	bl	0 <_ZN4core9panicking11panic_const24panic_const_add_overflow17h4bfeb5bb9e09c4a0E>
+			282: R_ARM_THM_CALL	_ZN4core9panicking11panic_const24panic_const_add_overflow17h4bfeb5bb9e09c4a0E
+ 286:	980f      	ldr	r0, [sp, #60]	@ 0x3c
+ 288:	b280      	uxth	r0, r0
+ 28a:	2100      	movs	r1, #0
+ 28c:	f7ff fffe 	bl	0 <vcsWrite6>
+			28c: R_ARM_THM_CALL	vcsWrite6
+ 290:	f8bd 006a 	ldrh.w	r0, [sp, #106]	@ 0x6a
+ 294:	1d81      	adds	r1, r0, #6
+ 296:	b288      	uxth	r0, r1
+ 298:	460a      	mov	r2, r1
+ 29a:	920e      	str	r2, [sp, #56]	@ 0x38
+ 29c:	4288      	cmp	r0, r1
+ 29e:	d114      	bne.n	2ca <_ZN4main20startWaitSpinner780017h99419b331f6ac552E+0x2ca>
+ 2a0:	e005      	b.n	2ae <_ZN4main20startWaitSpinner780017h99419b331f6ac552E+0x2ae>
+ 2a2:	f240 0000 	movw	r0, #0
+			2a2: R_ARM_THM_MOVW_ABS_NC	.Lanon.175670ed0f22630e69c7f6ae3736dddf.22
+ 2a6:	f2c0 0000 	movt	r0, #0
+			2a6: R_ARM_THM_MOVT_ABS	.Lanon.175670ed0f22630e69c7f6ae3736dddf.22
+ 2aa:	f7ff fffe 	bl	0 <_ZN4core9panicking11panic_const24panic_const_add_overflow17h4bfeb5bb9e09c4a0E>
+			2aa: R_ARM_THM_CALL	_ZN4core9panicking11panic_const24panic_const_add_overflow17h4bfeb5bb9e09c4a0E
+ 2ae:	980e      	ldr	r0, [sp, #56]	@ 0x38
+ 2b0:	b280      	uxth	r0, r0
+ 2b2:	2100      	movs	r1, #0
+ 2b4:	f7ff fffe 	bl	0 <vcsWrite6>
+			2b4: R_ARM_THM_CALL	vcsWrite6
+ 2b8:	f8bd 006a 	ldrh.w	r0, [sp, #106]	@ 0x6a
+ 2bc:	1dc1      	adds	r1, r0, #7
+ 2be:	b288      	uxth	r0, r1
+ 2c0:	460a      	mov	r2, r1
+ 2c2:	920d      	str	r2, [sp, #52]	@ 0x34
+ 2c4:	4288      	cmp	r0, r1
+ 2c6:	d10a      	bne.n	2de <_ZN4main20startWaitSpinner780017h99419b331f6ac552E+0x2de>
+ 2c8:	e005      	b.n	2d6 <_ZN4main20startWaitSpinner780017h99419b331f6ac552E+0x2d6>
+ 2ca:	f240 0000 	movw	r0, #0
+			2ca: R_ARM_THM_MOVW_ABS_NC	.Lanon.175670ed0f22630e69c7f6ae3736dddf.23
+ 2ce:	f2c0 0000 	movt	r0, #0
+			2ce: R_ARM_THM_MOVT_ABS	.Lanon.175670ed0f22630e69c7f6ae3736dddf.23
+ 2d2:	f7ff fffe 	bl	0 <_ZN4core9panicking11panic_const24panic_const_add_overflow17h4bfeb5bb9e09c4a0E>
+			2d2: R_ARM_THM_CALL	_ZN4core9panicking11panic_const24panic_const_add_overflow17h4bfeb5bb9e09c4a0E
+ 2d6:	980d      	ldr	r0, [sp, #52]	@ 0x34
+ 2d8:	f8ad 006a 	strh.w	r0, [sp, #106]	@ 0x6a
+ 2dc:	e70b      	b.n	f6 <_ZN4main20startWaitSpinner780017h99419b331f6ac552E+0xf6>
+ 2de:	f240 0000 	movw	r0, #0
+			2de: R_ARM_THM_MOVW_ABS_NC	.Lanon.175670ed0f22630e69c7f6ae3736dddf.24
+ 2e2:	f2c0 0000 	movt	r0, #0
+			2e2: R_ARM_THM_MOVT_ABS	.Lanon.175670ed0f22630e69c7f6ae3736dddf.24
+ 2e6:	f7ff fffe 	bl	0 <_ZN4core9panicking11panic_const24panic_const_add_overflow17h4bfeb5bb9e09c4a0E>
+			2e6: R_ARM_THM_CALL	_ZN4core9panicking11panic_const24panic_const_add_overflow17h4bfeb5bb9e09c4a0E
+ 2ea:	a830      	add	r0, sp, #192	@ 0xc0
+ 2ec:	f7ff fffe 	bl	0 <_ZN4main20startWaitSpinner780017h99419b331f6ac552E>
+			2ec: R_ARM_THM_CALL	_ZN4core4iter5range101_$LT$impl$u20$core..iter..traits..iterator..Iterator$u20$for$u20$core..ops..range..Range$LT$A$GT$$GT$4next17h9a98ccf1522da18aE
+ 2f0:	9032      	str	r0, [sp, #200]	@ 0xc8
+ 2f2:	9133      	str	r1, [sp, #204]	@ 0xcc
+ 2f4:	9832      	ldr	r0, [sp, #200]	@ 0xc8
+ 2f6:	07c0      	lsls	r0, r0, #31
+ 2f8:	2800      	cmp	r0, #0
+ 2fa:	f43f aebe 	beq.w	7a <_ZN4main20startWaitSpinner780017h99419b331f6ac552E+0x7a>
+ 2fe:	e7ff      	b.n	300 <_ZN4main20startWaitSpinner780017h99419b331f6ac552E+0x300>
+ 300:	f8bd 006a 	ldrh.w	r0, [sp, #106]	@ 0x6a
+ 304:	2100      	movs	r1, #0
+ 306:	f7ff fffe 	bl	0 <vcsWrite6>
+			306: R_ARM_THM_CALL	vcsWrite6
+ 30a:	f8bd 006a 	ldrh.w	r0, [sp, #106]	@ 0x6a
+ 30e:	1c41      	adds	r1, r0, #1
+ 310:	b288      	uxth	r0, r1
+ 312:	460a      	mov	r2, r1
+ 314:	920c      	str	r2, [sp, #48]	@ 0x30
+ 316:	4288      	cmp	r0, r1
+ 318:	d10e      	bne.n	338 <_ZN4main20startWaitSpinner780017h99419b331f6ac552E+0x338>
+ 31a:	e7ff      	b.n	31c <_ZN4main20startWaitSpinner780017h99419b331f6ac552E+0x31c>
+ 31c:	980c      	ldr	r0, [sp, #48]	@ 0x30
+ 31e:	b280      	uxth	r0, r0
+ 320:	2124      	movs	r1, #36	@ 0x24
+ 322:	f7ff fffe 	bl	0 <vcsWrite6>
+			322: R_ARM_THM_CALL	vcsWrite6
+ 326:	f8bd 006a 	ldrh.w	r0, [sp, #106]	@ 0x6a
+ 32a:	1c81      	adds	r1, r0, #2
+ 32c:	b288      	uxth	r0, r1
+ 32e:	460a      	mov	r2, r1
+ 330:	920b      	str	r2, [sp, #44]	@ 0x2c
+ 332:	4288      	cmp	r0, r1
+ 334:	d111      	bne.n	35a <_ZN4main20startWaitSpinner780017h99419b331f6ac552E+0x35a>
+ 336:	e005      	b.n	344 <_ZN4main20startWaitSpinner780017h99419b331f6ac552E+0x344>
+ 338:	f240 0000 	movw	r0, #0
+			338: R_ARM_THM_MOVW_ABS_NC	.Lanon.175670ed0f22630e69c7f6ae3736dddf.25
+ 33c:	f2c0 0000 	movt	r0, #0
+			33c: R_ARM_THM_MOVT_ABS	.Lanon.175670ed0f22630e69c7f6ae3736dddf.25
+ 340:	f7ff fffe 	bl	0 <_ZN4core9panicking11panic_const24panic_const_add_overflow17h4bfeb5bb9e09c4a0E>
+			340: R_ARM_THM_CALL	_ZN4core9panicking11panic_const24panic_const_add_overflow17h4bfeb5bb9e09c4a0E
+ 344:	9818      	ldr	r0, [sp, #96]	@ 0x60
+ 346:	b2c0      	uxtb	r0, r0
+ 348:	ebc0 01c0 	rsb	r1, r0, r0, lsl #3
+ 34c:	4608      	mov	r0, r1
+ 34e:	900a      	str	r0, [sp, #40]	@ 0x28
+ 350:	2000      	movs	r0, #0
+ 352:	ebb0 2f11 	cmp.w	r0, r1, lsr #8
+ 356:	d115      	bne.n	384 <_ZN4main20startWaitSpinner780017h99419b331f6ac552E+0x384>
+ 358:	e005      	b.n	366 <_ZN4main20startWaitSpinner780017h99419b331f6ac552E+0x366>
+ 35a:	f240 0000 	movw	r0, #0
+			35a: R_ARM_THM_MOVW_ABS_NC	.Lanon.175670ed0f22630e69c7f6ae3736dddf.26
+ 35e:	f2c0 0000 	movt	r0, #0
+			35e: R_ARM_THM_MOVT_ABS	.Lanon.175670ed0f22630e69c7f6ae3736dddf.26
+ 362:	f7ff fffe 	bl	0 <_ZN4core9panicking11panic_const24panic_const_add_overflow17h4bfeb5bb9e09c4a0E>
+			362: R_ARM_THM_CALL	_ZN4core9panicking11panic_const24panic_const_add_overflow17h4bfeb5bb9e09c4a0E
+ 366:	990a      	ldr	r1, [sp, #40]	@ 0x28
+ 368:	980b      	ldr	r0, [sp, #44]	@ 0x2c
+ 36a:	b280      	uxth	r0, r0
+ 36c:	b2c9      	uxtb	r1, r1
+ 36e:	f7ff fffe 	bl	0 <vcsWrite6>
+			36e: R_ARM_THM_CALL	vcsWrite6
+ 372:	f8bd 006a 	ldrh.w	r0, [sp, #106]	@ 0x6a
+ 376:	1cc1      	adds	r1, r0, #3
+ 378:	b288      	uxth	r0, r1
+ 37a:	460a      	mov	r2, r1
+ 37c:	9209      	str	r2, [sp, #36]	@ 0x24
+ 37e:	4288      	cmp	r0, r1
+ 380:	d10a      	bne.n	398 <_ZN4main20startWaitSpinner780017h99419b331f6ac552E+0x398>
+ 382:	e005      	b.n	390 <_ZN4main20startWaitSpinner780017h99419b331f6ac552E+0x390>
+ 384:	f240 0000 	movw	r0, #0
+			384: R_ARM_THM_MOVW_ABS_NC	.Lanon.175670ed0f22630e69c7f6ae3736dddf.27
+ 388:	f2c0 0000 	movt	r0, #0
+			388: R_ARM_THM_MOVT_ABS	.Lanon.175670ed0f22630e69c7f6ae3736dddf.27
+ 38c:	f7ff fffe 	bl	0 <_ZN4core9panicking11panic_const24panic_const_mul_overflow17h81d852b5f0a83503E>
+			38c: R_ARM_THM_CALL	_ZN4core9panicking11panic_const24panic_const_mul_overflow17h81d852b5f0a83503E
+ 390:	9809      	ldr	r0, [sp, #36]	@ 0x24
+ 392:	f8ad 006a 	strh.w	r0, [sp, #106]	@ 0x6a
+ 396:	e7a8      	b.n	2ea <_ZN4main20startWaitSpinner780017h99419b331f6ac552E+0x2ea>
+ 398:	f240 0000 	movw	r0, #0
+			398: R_ARM_THM_MOVW_ABS_NC	.Lanon.175670ed0f22630e69c7f6ae3736dddf.28
+ 39c:	f2c0 0000 	movt	r0, #0
+			39c: R_ARM_THM_MOVT_ABS	.Lanon.175670ed0f22630e69c7f6ae3736dddf.28
+ 3a0:	f7ff fffe 	bl	0 <_ZN4core9panicking11panic_const24panic_const_add_overflow17h4bfeb5bb9e09c4a0E>
+			3a0: R_ARM_THM_CALL	_ZN4core9panicking11panic_const24panic_const_add_overflow17h4bfeb5bb9e09c4a0E
+ 3a4:	a81f      	add	r0, sp, #124	@ 0x7c
+ 3a6:	f7ff fffe 	bl	0 <_ZN4main20startWaitSpinner780017h99419b331f6ac552E>
+			3a6: R_ARM_THM_CALL	_ZN4core4iter5range101_$LT$impl$u20$core..iter..traits..iterator..Iterator$u20$for$u20$core..ops..range..Range$LT$A$GT$$GT$4next17h26e4a23f0d651220E
+ 3aa:	9021      	str	r0, [sp, #132]	@ 0x84
+ 3ac:	9122      	str	r1, [sp, #136]	@ 0x88
+ 3ae:	9821      	ldr	r0, [sp, #132]	@ 0x84
+ 3b0:	07c0      	lsls	r0, r0, #31
+ 3b2:	2800      	cmp	r0, #0
+ 3b4:	f43f ae34 	beq.w	20 <_ZN4main20startWaitSpinner780017h99419b331f6ac552E+0x20>
+ 3b8:	e7ff      	b.n	3ba <_ZN4main20startWaitSpinner780017h99419b331f6ac552E+0x3ba>
+ 3ba:	9822      	ldr	r0, [sp, #136]	@ 0x88
+ 3bc:	9008      	str	r0, [sp, #32]
+ 3be:	2000      	movs	r0, #0
+ 3c0:	2108      	movs	r1, #8
+ 3c2:	f7ff fffe 	bl	0 <_ZN4main20startWaitSpinner780017h99419b331f6ac552E>
+			3c2: R_ARM_THM_CALL	_ZN63_$LT$I$u20$as$u20$core..iter..traits..collect..IntoIterator$GT$9into_iter17h13a0b2aadd51a0efE
+ 3c6:	9023      	str	r0, [sp, #140]	@ 0x8c
+ 3c8:	9124      	str	r1, [sp, #144]	@ 0x90
+ 3ca:	e7ff      	b.n	3cc <_ZN4main20startWaitSpinner780017h99419b331f6ac552E+0x3cc>
+ 3cc:	a823      	add	r0, sp, #140	@ 0x8c
+ 3ce:	f7ff fffe 	bl	0 <_ZN4main20startWaitSpinner780017h99419b331f6ac552E>
+			3ce: R_ARM_THM_CALL	_ZN4core4iter5range101_$LT$impl$u20$core..iter..traits..iterator..Iterator$u20$for$u20$core..ops..range..Range$LT$A$GT$$GT$4next17h9a98ccf1522da18aE
+ 3d2:	9025      	str	r0, [sp, #148]	@ 0x94
+ 3d4:	9126      	str	r1, [sp, #152]	@ 0x98
+ 3d6:	9825      	ldr	r0, [sp, #148]	@ 0x94
+ 3d8:	07c0      	lsls	r0, r0, #31
+ 3da:	2800      	cmp	r0, #0
+ 3dc:	d0e2      	beq.n	3a4 <_ZN4main20startWaitSpinner780017h99419b331f6ac552E+0x3a4>
+ 3de:	e7ff      	b.n	3e0 <_ZN4main20startWaitSpinner780017h99419b331f6ac552E+0x3e0>
+ 3e0:	9826      	ldr	r0, [sp, #152]	@ 0x98
+ 3e2:	9006      	str	r0, [sp, #24]
+ 3e4:	f240 0100 	movw	r1, #0
+			3e4: R_ARM_THM_MOVW_ABS_NC	.Lanon.175670ed0f22630e69c7f6ae3736dddf.12
+ 3e8:	f2c0 0100 	movt	r1, #0
+			3e8: R_ARM_THM_MOVT_ABS	.Lanon.175670ed0f22630e69c7f6ae3736dddf.12
+ 3ec:	a827      	add	r0, sp, #156	@ 0x9c
+ 3ee:	2220      	movs	r2, #32
+ 3f0:	f7ff fffe 	bl	0 <__aeabi_memcpy>
+			3f0: R_ARM_THM_CALL	__aeabi_memcpy
+ 3f4:	9919      	ldr	r1, [sp, #100]	@ 0x64
+ 3f6:	00c8      	lsls	r0, r1, #3
+ 3f8:	0f49      	lsrs	r1, r1, #29
+ 3fa:	9007      	str	r0, [sp, #28]
+ 3fc:	b939      	cbnz	r1, 40e <_ZN4main20startWaitSpinner780017h99419b331f6ac552E+0x40e>
+ 3fe:	e7ff      	b.n	400 <_ZN4main20startWaitSpinner780017h99419b331f6ac552E+0x400>
+ 400:	9808      	ldr	r0, [sp, #32]
+ 402:	f1c0 0107 	rsb	r1, r0, #7
+ 406:	9105      	str	r1, [sp, #20]
+ 408:	2807      	cmp	r0, #7
+ 40a:	d80d      	bhi.n	428 <_ZN4main20startWaitSpinner780017h99419b331f6ac552E+0x428>
+ 40c:	e005      	b.n	41a <_ZN4main20startWaitSpinner780017h99419b331f6ac552E+0x41a>
+ 40e:	f240 0000 	movw	r0, #0
+			40e: R_ARM_THM_MOVW_ABS_NC	.Lanon.175670ed0f22630e69c7f6ae3736dddf.29
+ 412:	f2c0 0000 	movt	r0, #0
+			412: R_ARM_THM_MOVT_ABS	.Lanon.175670ed0f22630e69c7f6ae3736dddf.29
+ 416:	f7ff fffe 	bl	0 <_ZN4core9panicking11panic_const24panic_const_mul_overflow17h81d852b5f0a83503E>
+			416: R_ARM_THM_CALL	_ZN4core9panicking11panic_const24panic_const_mul_overflow17h81d852b5f0a83503E
+ 41a:	9907      	ldr	r1, [sp, #28]
+ 41c:	9805      	ldr	r0, [sp, #20]
+ 41e:	4408      	add	r0, r1
+ 420:	4288      	cmp	r0, r1
+ 422:	9004      	str	r0, [sp, #16]
+ 424:	d30a      	bcc.n	43c <_ZN4main20startWaitSpinner780017h99419b331f6ac552E+0x43c>
+ 426:	e005      	b.n	434 <_ZN4main20startWaitSpinner780017h99419b331f6ac552E+0x434>
+ 428:	f240 0000 	movw	r0, #0
+			428: R_ARM_THM_MOVW_ABS_NC	.Lanon.175670ed0f22630e69c7f6ae3736dddf.30
+ 42c:	f2c0 0000 	movt	r0, #0
+			42c: R_ARM_THM_MOVT_ABS	.Lanon.175670ed0f22630e69c7f6ae3736dddf.30
+ 430:	f7ff fffe 	bl	0 <_ZN4core9panicking11panic_const24panic_const_sub_overflow17h91b99d45eed72cd2E>
+			430: R_ARM_THM_CALL	_ZN4core9panicking11panic_const24panic_const_sub_overflow17h91b99d45eed72cd2E
+ 434:	9804      	ldr	r0, [sp, #16]
+ 436:	2820      	cmp	r0, #32
+ 438:	d306      	bcc.n	448 <_ZN4main20startWaitSpinner780017h99419b331f6ac552E+0x448>
+ 43a:	e011      	b.n	460 <_ZN4main20startWaitSpinner780017h99419b331f6ac552E+0x460>
+ 43c:	f240 0000 	movw	r0, #0
+			43c: R_ARM_THM_MOVW_ABS_NC	.Lanon.175670ed0f22630e69c7f6ae3736dddf.29
+ 440:	f2c0 0000 	movt	r0, #0
+			440: R_ARM_THM_MOVT_ABS	.Lanon.175670ed0f22630e69c7f6ae3736dddf.29
+ 444:	f7ff fffe 	bl	0 <_ZN4core9panicking11panic_const24panic_const_add_overflow17h4bfeb5bb9e09c4a0E>
+			444: R_ARM_THM_CALL	_ZN4core9panicking11panic_const24panic_const_add_overflow17h4bfeb5bb9e09c4a0E
+ 448:	9a06      	ldr	r2, [sp, #24]
+ 44a:	9904      	ldr	r1, [sp, #16]
+ 44c:	a827      	add	r0, sp, #156	@ 0x9c
+ 44e:	5c40      	ldrb	r0, [r0, r1]
+ 450:	9002      	str	r0, [sp, #8]
+ 452:	f1c2 0007 	rsb	r0, r2, #7
+ 456:	2107      	movs	r1, #7
+ 458:	4291      	cmp	r1, r2
+ 45a:	9003      	str	r0, [sp, #12]
+ 45c:	d60c      	bvs.n	478 <_ZN4main20startWaitSpinner780017h99419b331f6ac552E+0x478>
+ 45e:	e007      	b.n	470 <_ZN4main20startWaitSpinner780017h99419b331f6ac552E+0x470>
+ 460:	9804      	ldr	r0, [sp, #16]
+ 462:	f240 0200 	movw	r2, #0
+			462: R_ARM_THM_MOVW_ABS_NC	.Lanon.175670ed0f22630e69c7f6ae3736dddf.31
+ 466:	f2c0 0200 	movt	r2, #0
+			466: R_ARM_THM_MOVT_ABS	.Lanon.175670ed0f22630e69c7f6ae3736dddf.31
+ 46a:	2120      	movs	r1, #32
+ 46c:	f7ff fffe 	bl	0 <_ZN4core9panicking18panic_bounds_check17h3a9322687407ebd2E>
+			46c: R_ARM_THM_CALL	_ZN4core9panicking18panic_bounds_check17h3a9322687407ebd2E
+ 470:	9803      	ldr	r0, [sp, #12]
+ 472:	2808      	cmp	r0, #8
+ 474:	d306      	bcc.n	484 <_ZN4main20startWaitSpinner780017h99419b331f6ac552E+0x484>
+ 476:	e00e      	b.n	496 <_ZN4main20startWaitSpinner780017h99419b331f6ac552E+0x496>
+ 478:	f240 0000 	movw	r0, #0
+			478: R_ARM_THM_MOVW_ABS_NC	.Lanon.175670ed0f22630e69c7f6ae3736dddf.32
+ 47c:	f2c0 0000 	movt	r0, #0
+			47c: R_ARM_THM_MOVT_ABS	.Lanon.175670ed0f22630e69c7f6ae3736dddf.32
+ 480:	f7ff fffe 	bl	0 <_ZN4core9panicking11panic_const24panic_const_sub_overflow17h91b99d45eed72cd2E>
+			480: R_ARM_THM_CALL	_ZN4core9panicking11panic_const24panic_const_sub_overflow17h91b99d45eed72cd2E
+ 484:	9802      	ldr	r0, [sp, #8]
+ 486:	9903      	ldr	r1, [sp, #12]
+ 488:	f001 0107 	and.w	r1, r1, #7
+ 48c:	b2c0      	uxtb	r0, r0
+ 48e:	40c8      	lsrs	r0, r1
+ 490:	07c0      	lsls	r0, r0, #31
+ 492:	b930      	cbnz	r0, 4a2 <_ZN4main20startWaitSpinner780017h99419b331f6ac552E+0x4a2>
+ 494:	e00b      	b.n	4ae <_ZN4main20startWaitSpinner780017h99419b331f6ac552E+0x4ae>
+ 496:	f240 0000 	movw	r0, #0
+			496: R_ARM_THM_MOVW_ABS_NC	.Lanon.175670ed0f22630e69c7f6ae3736dddf.33
+ 49a:	f2c0 0000 	movt	r0, #0
+			49a: R_ARM_THM_MOVT_ABS	.Lanon.175670ed0f22630e69c7f6ae3736dddf.33
+ 49e:	f7ff fffe 	bl	0 <_ZN4core9panicking11panic_const24panic_const_shr_overflow17h6c63d9ed4ee723deE>
+			49e: R_ARM_THM_CALL	_ZN4core9panicking11panic_const24panic_const_shr_overflow17h6c63d9ed4ee723deE
+ 4a2:	f8bd 006a 	ldrh.w	r0, [sp, #106]	@ 0x6a
+ 4a6:	2155      	movs	r1, #85	@ 0x55
+ 4a8:	f7ff fffe 	bl	0 <vcsWrite6>
+			4a8: R_ARM_THM_CALL	vcsWrite6
+ 4ac:	e005      	b.n	4ba <_ZN4main20startWaitSpinner780017h99419b331f6ac552E+0x4ba>
+ 4ae:	f8bd 006a 	ldrh.w	r0, [sp, #106]	@ 0x6a
+ 4b2:	2100      	movs	r1, #0
+ 4b4:	f7ff fffe 	bl	0 <vcsWrite6>
+			4b4: R_ARM_THM_CALL	vcsWrite6
+ 4b8:	e7ff      	b.n	4ba <_ZN4main20startWaitSpinner780017h99419b331f6ac552E+0x4ba>
+ 4ba:	f8bd 006a 	ldrh.w	r0, [sp, #106]	@ 0x6a
+ 4be:	1c41      	adds	r1, r0, #1
+ 4c0:	b288      	uxth	r0, r1
+ 4c2:	460a      	mov	r2, r1
+ 4c4:	9201      	str	r2, [sp, #4]
+ 4c6:	4288      	cmp	r0, r1
+ 4c8:	d104      	bne.n	4d4 <_ZN4main20startWaitSpinner780017h99419b331f6ac552E+0x4d4>
+ 4ca:	e7ff      	b.n	4cc <_ZN4main20startWaitSpinner780017h99419b331f6ac552E+0x4cc>
+ 4cc:	9801      	ldr	r0, [sp, #4]
+ 4ce:	f8ad 006a 	strh.w	r0, [sp, #106]	@ 0x6a
+ 4d2:	e77b      	b.n	3cc <_ZN4main20startWaitSpinner780017h99419b331f6ac552E+0x3cc>
+ 4d4:	f240 0000 	movw	r0, #0
+			4d4: R_ARM_THM_MOVW_ABS_NC	.Lanon.175670ed0f22630e69c7f6ae3736dddf.34
+ 4d8:	f2c0 0000 	movt	r0, #0
+			4d8: R_ARM_THM_MOVT_ABS	.Lanon.175670ed0f22630e69c7f6ae3736dddf.34
+ 4dc:	f7ff fffe 	bl	0 <_ZN4core9panicking11panic_const24panic_const_add_overflow17h4bfeb5bb9e09c4a0E>
+			4dc: R_ARM_THM_CALL	_ZN4core9panicking11panic_const24panic_const_add_overflow17h4bfeb5bb9e09c4a0E
+
+Disassembly of section .text._ZN4main12writePadding17ha62616d34ee47109E:
+
+00000000 <_ZN4main12writePadding17ha62616d34ee47109E>:
+_ZN4main12writePadding17ha62616d34ee47109E():
+   0:	b580      	push	{r7, lr}
+   2:	466f      	mov	r7, sp
+   4:	b086      	sub	sp, #24
+   6:	9004      	str	r0, [sp, #16]
+   8:	4601      	mov	r1, r0
+   a:	9103      	str	r1, [sp, #12]
+   c:	b280      	uxth	r0, r0
+   e:	210f      	movs	r1, #15
+  10:	f7ff fffe 	bl	0 <vcsWrite6>
+			10: R_ARM_THM_CALL	vcsWrite6
+  14:	9904      	ldr	r1, [sp, #16]
+  16:	2001      	movs	r0, #1
+  18:	fa10 f181 	uxtah	r1, r0, r1
+  1c:	b288      	uxth	r0, r1
+  1e:	460a      	mov	r2, r1
+  20:	9205      	str	r2, [sp, #20]
+  22:	4288      	cmp	r0, r1
+  24:	d10f      	bne.n	46 <_ZN4main12writePadding17ha62616d34ee47109E+0x46>
+  26:	e7ff      	b.n	28 <_ZN4main12writePadding17ha62616d34ee47109E+0x28>
+  28:	9805      	ldr	r0, [sp, #20]
+  2a:	b280      	uxth	r0, r0
+  2c:	2124      	movs	r1, #36	@ 0x24
+  2e:	f7ff fffe 	bl	0 <vcsWrite6>
+			2e: R_ARM_THM_CALL	vcsWrite6
+  32:	9903      	ldr	r1, [sp, #12]
+  34:	2002      	movs	r0, #2
+  36:	fa10 f181 	uxtah	r1, r0, r1
+  3a:	b288      	uxth	r0, r1
+  3c:	460a      	mov	r2, r1
+  3e:	9202      	str	r2, [sp, #8]
+  40:	4288      	cmp	r0, r1
+  42:	d115      	bne.n	70 <_ZN4main12writePadding17ha62616d34ee47109E+0x70>
+  44:	e005      	b.n	52 <_ZN4main12writePadding17ha62616d34ee47109E+0x52>
+  46:	f240 0000 	movw	r0, #0
+			46: R_ARM_THM_MOVW_ABS_NC	.Lanon.175670ed0f22630e69c7f6ae3736dddf.35
+  4a:	f2c0 0000 	movt	r0, #0
+			4a: R_ARM_THM_MOVT_ABS	.Lanon.175670ed0f22630e69c7f6ae3736dddf.35
+  4e:	f7ff fffe 	bl	0 <_ZN4core9panicking11panic_const24panic_const_add_overflow17h4bfeb5bb9e09c4a0E>
+			4e: R_ARM_THM_CALL	_ZN4core9panicking11panic_const24panic_const_add_overflow17h4bfeb5bb9e09c4a0E
+  52:	9802      	ldr	r0, [sp, #8]
+  54:	b280      	uxth	r0, r0
+  56:	2105      	movs	r1, #5
+  58:	f7ff fffe 	bl	0 <vcsWrite6>
+			58: R_ARM_THM_CALL	vcsWrite6
+  5c:	9903      	ldr	r1, [sp, #12]
+  5e:	2003      	movs	r0, #3
+  60:	fa10 f181 	uxtah	r1, r0, r1
+  64:	b288      	uxth	r0, r1
+  66:	460a      	mov	r2, r1
+  68:	9201      	str	r2, [sp, #4]
+  6a:	4288      	cmp	r0, r1
+  6c:	d109      	bne.n	82 <_ZN4main12writePadding17ha62616d34ee47109E+0x82>
+  6e:	e005      	b.n	7c <_ZN4main12writePadding17ha62616d34ee47109E+0x7c>
+  70:	f240 0000 	movw	r0, #0
+			70: R_ARM_THM_MOVW_ABS_NC	.Lanon.175670ed0f22630e69c7f6ae3736dddf.36
+  74:	f2c0 0000 	movt	r0, #0
+			74: R_ARM_THM_MOVT_ABS	.Lanon.175670ed0f22630e69c7f6ae3736dddf.36
+  78:	f7ff fffe 	bl	0 <_ZN4core9panicking11panic_const24panic_const_add_overflow17h4bfeb5bb9e09c4a0E>
+			78: R_ARM_THM_CALL	_ZN4core9panicking11panic_const24panic_const_add_overflow17h4bfeb5bb9e09c4a0E
+  7c:	9801      	ldr	r0, [sp, #4]
+  7e:	b006      	add	sp, #24
+  80:	bd80      	pop	{r7, pc}
+  82:	f240 0000 	movw	r0, #0
+			82: R_ARM_THM_MOVW_ABS_NC	.Lanon.175670ed0f22630e69c7f6ae3736dddf.37
+  86:	f2c0 0000 	movt	r0, #0
+			86: R_ARM_THM_MOVT_ABS	.Lanon.175670ed0f22630e69c7f6ae3736dddf.37
+  8a:	f7ff fffe 	bl	0 <_ZN4core9panicking11panic_const24panic_const_add_overflow17h4bfeb5bb9e09c4a0E>
+			8a: R_ARM_THM_CALL	_ZN4core9panicking11panic_const24panic_const_add_overflow17h4bfeb5bb9e09c4a0E

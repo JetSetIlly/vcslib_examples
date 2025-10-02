@@ -1,0 +1,6 @@
+#!/bin/bash
+
+rustc --edition=2024 --emit=obj -C opt-level=0 --crate-type=lib --target=thumbv7em-none-eabihf main.rs
+mv main.o main.elf
+arm-none-eabi-objdump -Sdrl main.elf > obj
+# ~/test7800/test7800 -run main.elf

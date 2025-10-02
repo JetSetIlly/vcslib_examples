@@ -1,0 +1,4 @@
+rustup target add thumbv7em-none-eabihf
+rustup target add thumbv7m-none-eabihf
+cargo install cargo-binutils
+rustup component add llvm-tools-preview
