@@ -1,3 +1,4 @@
+rustup target add thumbv6m-none-eabi
 rustup target add thumbv7em-none-eabihf
 rustup target add thumbv7m-none-eabihf
 cargo install cargo-binutils
