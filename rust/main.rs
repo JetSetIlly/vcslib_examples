@@ -7,7 +7,7 @@
 mod vcslib;
 
 #[unsafe(no_mangle)]
-pub extern "C" fn main(args: *mut u32) -> i32 {
+pub extern "C" fn elf_main(args: *mut u32) -> i32 {
     let argSystemType: u32 = unsafe {*args}; 
 
     if argSystemType <= 2 {
