@@ -1,6 +1,13 @@
 #![allow(non_snake_case)]
 #![allow(dead_code)]
 
+use core::panic::PanicInfo;
+
+#[panic_handler]
+fn panic(_info: &PanicInfo) -> ! {
+    loop {}
+}
+
 // defines for VCS/2600 memory mapped registers
 pub const VSYNC: u16 = 0x00;
 pub const VBLANK: u16 = 0x01;

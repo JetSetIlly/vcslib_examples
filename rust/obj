@@ -2,16 +2,24 @@
 main.elf:     file format elf32-littlearm
 
 
-Disassembly of section .text.main:
+Disassembly of section .text._RNvCs73fAdSrgOJL_7___rustc17rust_begin_unwind:
 
-00000000 <main>:
-main():
+00000000 <_RNvCs73fAdSrgOJL_7___rustc17rust_begin_unwind>:
+_RNvCs73fAdSrgOJL_7___rustc17rust_begin_unwind():
+   0:	b580      	push	{r7, lr}
+   2:	af00      	add	r7, sp, #0
+   4:	e7fe      	b.n	4 <_RNvCs73fAdSrgOJL_7___rustc17rust_begin_unwind+0x4>
+
+Disassembly of section .text.elf_main:
+
+00000000 <elf_main>:
+elf_main():
    0:	b580      	push	{r7, lr}
    2:	af00      	add	r7, sp, #0
    4:	b086      	sub	sp, #24
    6:	6800      	ldr	r0, [r0, #0]
    8:	2802      	cmp	r0, #2
-   a:	d860      	bhi.n	ce <main+0xce>
+   a:	d860      	bhi.n	ce <elf_main+0xce>
    c:	f7ff fffe 	bl	0 <vcsJmp3>
 			c: R_ARM_THM_CALL	vcsJmp3
   10:	2600      	movs	r6, #0
@@ -23,7 +31,7 @@ main():
 			1a: R_ARM_THM_CALL	vcsWrite5
   1e:	1c76      	adds	r6, r6, #1
   20:	2d7f      	cmp	r5, #127	@ 0x7f
-  22:	d3f6      	bcc.n	12 <main+0x12>
+  22:	d3f6      	bcc.n	12 <elf_main+0x12>
   24:	f7ff fffe 	bl	0 <vcsJmp3>
 			24: R_ARM_THM_CALL	vcsJmp3
   28:	2002      	movs	r0, #2
@@ -84,7 +92,7 @@ main():
   96:	202a      	movs	r0, #42	@ 0x2a
   98:	f7ff fffe 	bl	0 <vcsSta3>
 			98: R_ARM_THM_CALL	vcsSta3
-  9c:	4db5      	ldr	r5, [pc, #724]	@ (374 <main+0x374>)
+  9c:	4db5      	ldr	r5, [pc, #724]	@ (374 <elf_main+0x374>)
   9e:	5d29      	ldrb	r1, [r5, r4]
   a0:	2080      	movs	r0, #128	@ 0x80
   a2:	4320      	orrs	r0, r4
@@ -93,11 +101,11 @@ main():
 			a6: R_ARM_THM_CALL	vcsWrite5
   aa:	1c64      	adds	r4, r4, #1
   ac:	2c20      	cmp	r4, #32
-  ae:	d1f6      	bne.n	9e <main+0x9e>
+  ae:	d1f6      	bne.n	9e <elf_main+0x9e>
   b0:	f7ff fffe 	bl	0 <vcsJmp3>
 			b0: R_ARM_THM_CALL	vcsJmp3
   b4:	2400      	movs	r4, #0
-  b6:	4db1      	ldr	r5, [pc, #708]	@ (37c <main+0x37c>)
+  b6:	4db1      	ldr	r5, [pc, #708]	@ (37c <elf_main+0x37c>)
   b8:	5d29      	ldrb	r1, [r5, r4]
   ba:	4620      	mov	r0, r4
   bc:	30a0      	adds	r0, #160	@ 0xa0
@@ -106,27 +114,27 @@ main():
 			c0: R_ARM_THM_CALL	vcsWrite5
   c4:	1c64      	adds	r4, r4, #1
   c6:	2c5c      	cmp	r4, #92	@ 0x5c
-  c8:	d1f6      	bne.n	b8 <main+0xb8>
+  c8:	d1f6      	bne.n	b8 <elf_main+0xb8>
   ca:	24a1      	movs	r4, #161	@ 0xa1
-  cc:	e14e      	b.n	36c <main+0x36c>
+  cc:	e14e      	b.n	36c <elf_main+0x36c>
   ce:	2804      	cmp	r0, #4
-  d0:	d900      	bls.n	d4 <main+0xd4>
-  d2:	e14e      	b.n	372 <main+0x372>
+  d0:	d900      	bls.n	d4 <elf_main+0xd4>
+  d2:	e14e      	b.n	372 <elf_main+0x372>
   d4:	f7ff fffe 	bl	0 <vcsJmp3>
 			d4: R_ARM_THM_CALL	vcsJmp3
   d8:	2025      	movs	r0, #37	@ 0x25
   da:	0204      	lsls	r4, r0, #8
-  dc:	48a5      	ldr	r0, [pc, #660]	@ (374 <main+0x374>)
+  dc:	48a5      	ldr	r0, [pc, #660]	@ (374 <elf_main+0x374>)
   de:	1dc1      	adds	r1, r0, #7
   e0:	2201      	movs	r2, #1
   e2:	4610      	mov	r0, r2
   e4:	9203      	str	r2, [sp, #12]
-  e6:	e004      	b.n	f2 <main+0xf2>
+  e6:	e004      	b.n	f2 <elf_main+0xf2>
   e8:	4618      	mov	r0, r3
   ea:	9901      	ldr	r1, [sp, #4]
   ec:	3108      	adds	r1, #8
   ee:	2b03      	cmp	r3, #3
-  f0:	d84d      	bhi.n	18e <main+0x18e>
+  f0:	d84d      	bhi.n	18e <elf_main+0x18e>
   f2:	9000      	str	r0, [sp, #0]
   f4:	4610      	mov	r0, r2
   f6:	9101      	str	r1, [sp, #4]
@@ -197,14 +205,14 @@ main():
  178:	1e49      	subs	r1, r1, #1
  17a:	3408      	adds	r4, #8
  17c:	2a08      	cmp	r2, #8
- 17e:	d3bb      	bcc.n	f8 <main+0xf8>
+ 17e:	d3bb      	bcc.n	f8 <elf_main+0xf8>
  180:	9a03      	ldr	r2, [sp, #12]
  182:	9e02      	ldr	r6, [sp, #8]
  184:	9b00      	ldr	r3, [sp, #0]
  186:	2b04      	cmp	r3, #4
- 188:	d2ae      	bcs.n	e8 <main+0xe8>
+ 188:	d2ae      	bcs.n	e8 <elf_main+0xe8>
  18a:	1c58      	adds	r0, r3, #1
- 18c:	e7ad      	b.n	ea <main+0xea>
+ 18c:	e7ad      	b.n	ea <elf_main+0xea>
  18e:	f7ff fffe 	bl	0 <vcsJmp3>
 			18e: R_ARM_THM_CALL	vcsJmp3
  192:	2023      	movs	r0, #35	@ 0x23
@@ -240,8 +248,8 @@ main():
  1ce:	1dac      	adds	r4, r5, #6
  1d0:	2001      	movs	r0, #1
  1d2:	9001      	str	r0, [sp, #4]
- 1d4:	e000      	b.n	1d8 <main+0x1d8>
- 1d6:	d278      	bcs.n	2ca <main+0x2ca>
+ 1d4:	e000      	b.n	1d8 <elf_main+0x1d8>
+ 1d6:	d278      	bcs.n	2ca <elf_main+0x2ca>
  1d8:	9002      	str	r0, [sp, #8]
  1da:	b2a0      	uxth	r0, r4
  1dc:	2500      	movs	r5, #0
@@ -360,9 +368,9 @@ main():
  2be:	1c70      	adds	r0, r6, #1
  2c0:	b2f1      	uxtb	r1, r6
  2c2:	2907      	cmp	r1, #7
- 2c4:	d387      	bcc.n	1d6 <main+0x1d6>
+ 2c4:	d387      	bcc.n	1d6 <elf_main+0x1d6>
  2c6:	4630      	mov	r0, r6
- 2c8:	e785      	b.n	1d6 <main+0x1d6>
+ 2c8:	e785      	b.n	1d6 <elf_main+0x1d6>
  2ca:	9d00      	ldr	r5, [sp, #0]
  2cc:	3584      	adds	r5, #132	@ 0x84
  2ce:	2413      	movs	r4, #19
@@ -382,7 +390,7 @@ main():
 			2e8: R_ARM_THM_CALL	vcsWrite6
  2ec:	1ced      	adds	r5, r5, #3
  2ee:	1e64      	subs	r4, r4, #1
- 2f0:	d1ee      	bne.n	2d0 <main+0x2d0>
+ 2f0:	d1ee      	bne.n	2d0 <elf_main+0x2d0>
  2f2:	f7ff fffe 	bl	0 <vcsJmp3>
 			2f2: R_ARM_THM_CALL	vcsJmp3
  2f6:	2009      	movs	r0, #9
@@ -429,12 +437,12 @@ main():
  348:	b2f1      	uxtb	r1, r6
  34a:	2906      	cmp	r1, #6
  34c:	4606      	mov	r6, r0
- 34e:	d3d5      	bcc.n	2fc <main+0x2fc>
+ 34e:	d3d5      	bcc.n	2fc <elf_main+0x2fc>
  350:	f7ff fffe 	bl	0 <vcsJmp3>
 			350: R_ARM_THM_CALL	vcsJmp3
  354:	2011      	movs	r0, #17
  356:	0244      	lsls	r4, r0, #9
- 358:	4e07      	ldr	r6, [pc, #28]	@ (378 <main+0x378>)
+ 358:	4e07      	ldr	r6, [pc, #28]	@ (378 <elf_main+0x378>)
  35a:	5d71      	ldrb	r1, [r6, r5]
  35c:	4628      	mov	r0, r5
  35e:	4320      	orrs	r0, r4
@@ -443,12 +451,12 @@ main():
 			362: R_ARM_THM_CALL	vcsWrite6
  366:	1c6d      	adds	r5, r5, #1
  368:	2d79      	cmp	r5, #121	@ 0x79
- 36a:	d1f6      	bne.n	35a <main+0x35a>
+ 36a:	d1f6      	bne.n	35a <elf_main+0x35a>
  36c:	4620      	mov	r0, r4
  36e:	f7ff fffe 	bl	0 <vcsJmpToRam3>
 			36e: R_ARM_THM_CALL	vcsJmpToRam3
- 372:	e7fe      	b.n	372 <main+0x372>
+ 372:	e7fe      	b.n	372 <elf_main+0x372>
 	...
 			374: R_ARM_ABS32	.rodata.cst32
-			378: R_ARM_ABS32	.rodata..Lanon.fad58de7366495db4650cfefac2fcd61.2
-			37c: R_ARM_ABS32	.rodata..Lanon.fad58de7366495db4650cfefac2fcd61.0
+			378: R_ARM_ABS32	.rodata..Lanon.08c8286dae666ec4838fd2a9563ad344.2
+			37c: R_ARM_ABS32	.rodata..Lanon.08c8286dae666ec4838fd2a9563ad344.0
