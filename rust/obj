@@ -52,7 +52,7 @@ elf_main():
   46:	f7ff fffe 	bl	0 <vcsWrite5>
 			46: R_ARM_THM_CALL	vcsWrite5
   4a:	2009      	movs	r0, #9
-  4c:	2582      	movs	r5, #130	@ 0x82
+  4c:	2522      	movs	r5, #34	@ 0x22
   4e:	4629      	mov	r1, r5
   50:	f7ff fffe 	bl	0 <vcsWrite5>
 			50: R_ARM_THM_CALL	vcsWrite5

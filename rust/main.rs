@@ -49,8 +49,8 @@ fn startWaitSpinner2600() {
 	vcslib::Txs2();
 	vcslib::Sta3(vcslib::RESP1);
 	vcslib::Write5(vcslib::COLUPF, 0x0a);
-	vcslib::Write5(vcslib::COLUBK, 0x82);
-	vcslib::Write5(vcslib::COLUP0, 0x82);
+	vcslib::Write5(vcslib::COLUBK, 0x22);
+	vcslib::Write5(vcslib::COLUP0, 0x22);
 	vcslib::Write5(vcslib::GRP0, 0xff);
 	vcslib::Write5(vcslib::NUSIZ0, 0x07);
 	vcslib::Write5(vcslib::GRP1, 0xff);
