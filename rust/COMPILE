@@ -1,5 +1,7 @@
 #!/bin/bash
 
-rustc --edition=2024 --emit=obj -C opt-level=2 --target=thumbv6m-none-eabi main.rs -o main.elf
+rustc --edition=2024 --emit=obj -C opt-level=2 \
+	-C target-feature=+long-calls \
+	--target=thumbv6m-none-eabi main.rs -o main.elf
 arm-none-eabi-strip main.elf -d -R.comment -R.ARM.attributes
 arm-none-eabi-objdump -Sdrl main.elf > obj
